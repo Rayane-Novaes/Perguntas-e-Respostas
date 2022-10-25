@@ -25,27 +25,22 @@ public class Base {
                 System.out.print("O que deseja fazer?");
                 int input = leiaInput(" > ", 3);
 
-                switch (input) {
-                    case 1:
-                        jogar();
-                        break;
-
-                    case 2:
-                        instrucoes();
-                        break;
-
-                    case 3:
-                        creditos();
-                        break;
-                }
+        switch (input) {
+            case 1 -> jogar();
+            case 2 -> instrucoes();
+            case 3 -> creditos();
+        }
     }
 
 
     public static void jogar(){
-        // Esse metodo cosulta as classes perguntas e pontuação
-        Pontuação.Jogador();
+        // Esse metodo cosulta as classes perguntas e jogador
+        System.out.println("Informe seu nickname: ");
+        String NickName = entrada.next();
+        Jogador NovoJogador = new Jogador();
+        NovoJogador.setNickname(NovoJogador.toString(NickName)); // ATRIBUIDO O NOME DO JOGADOR
         Perguntas.categoria();
-        Pontuação.ranking();
+        Jogador.ranking();
     }
 
     public static void instrucoes(){
