@@ -37,10 +37,10 @@ public class Base {
         // Esse metodo cosulta as classes perguntas e jogador
         System.out.println("Informe seu nickname: ");
         String NickName = entrada.next();
-        Jogador NovoJogador = new Jogador();
-        NovoJogador.setNickname(NovoJogador.toString(NickName)); // ATRIBUIDO O NOME DO JOGADOR
-        Perguntas.categoria();
-        Jogador.ranking();
+        Jogadores novoJogadores = new Jogadores();
+        novoJogadores.setNickname(novoJogadores.toString(NickName)); // ATRIBUIDO O NOME DO JOGADOR
+        Perguntas.categoria(novoJogadores);
+        Jogadores.ranking();
     }
 
     public static void instrucoes(){

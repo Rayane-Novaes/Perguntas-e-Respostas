@@ -1,10 +1,10 @@
 
-public class Jogador {
+public class Jogadores {
 
     // Atributos do objeto Jogador
     private String nickname;
-    private int vidas;
-    private int pontuacao;
+    private int vidas = 3;
+    private int pontuacao = 0;
     private int acertos;
     private int erros;
 
