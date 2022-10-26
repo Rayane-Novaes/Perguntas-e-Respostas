@@ -2,7 +2,7 @@
 public class Perguntas {
 
     Jogadores novoJogadores = new Jogadores();
-    public static void categoria(){
+    public static void categoria(Jogadores novoJogadores){
         System.out.println("Escolha a categoria antes de iniciar:");
         System.out.println("[1] Geek");
         System.out.println("[2] Músicas");
