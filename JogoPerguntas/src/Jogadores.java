@@ -1,25 +1,28 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
 
 public class Jogadores {
-
-    // Atributos do objeto Jogador
-    private String nickname;
+    private static String nickname;
     private int vidas = 3;
     private int pontuacao = 0;
     private int acertos;
     private int erros;
 
+    public Jogadores() {
+    }
 
-    // Getters e setters dos atribuitos ----------------------------------------------------------
-    public String getNickname() {
+    public static String getNickname() {
         return nickname;
     }
 
     public void setNickname(String nickname) {
-        this.nickname = nickname;
+        Jogadores.nickname = nickname;
     }
 
     public int getVidas() {
-        return vidas;
+        return this.vidas;
     }
 
     public void setVidas(int vidas) {
@@ -27,7 +30,7 @@ public class Jogadores {
     }
 
     public int getPontuacao() {
-        return pontuacao;
+        return this.pontuacao;
     }
 
     public void setPontuacao(int pontuacao) {
@@ -35,7 +38,7 @@ public class Jogadores {
     }
 
     public int getAcertos() {
-        return acertos;
+        return this.acertos;
     }
 
     public void setAcertos(int acertos) {
@@ -43,18 +46,17 @@ public class Jogadores {
     }
 
     public int getErros() {
-        return erros;
+        return this.erros;
     }
 
     public void setErros(int erros) {
         this.erros = erros;
     }
 
-    public static void pontuacao(){
-        // Realiza os calculos de para a pontuação do jogador
+    public static void pontuacao() {
     }
-    public static void ranking(){
-        // verificar a pontuação de acordo com o valor armazenado na variavel em Perguntas.Categoria
+
+    public static void ranking() {
     }
 
     public String toString(String nickName) {

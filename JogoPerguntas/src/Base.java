@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Base {
@@ -6,16 +7,15 @@ public class Base {
 
 
     // -------------------------- METODOS DE AÇÃO DE JOGABILIDADE ------------------------------
-    public static void StarGamer(){
-        // Inicializar
+    public static void StarGamer() throws IOException {
+        // INICIALIZAÇÃO ----------------------------------------------------
         System.out.println("------------ PERGUNTAS E RESPOSTAS -------------");
-        System.out.println("Bem vindo, usuários! Prontos para testar os conhecimentos?");
         Continue();
         menu();
     }
 
     public static void GamerOver(){}
-    public static void menu() {
+    public static void menu() throws IOException {
                 // METODO MENU: Utilizado para chamar os outros metodos que dão ação para o jogo.
                 System.out.println("------------- Menu Principal -----------------");
                 System.out.println("[1] Jogar");
@@ -23,7 +23,7 @@ public class Base {
                 System.out.println("[3] Créditos");
 
                 System.out.print("O que deseja fazer?");
-                int input = leiaInput(" > ", 3);
+                int input = leiaInput(" > ", 4);
 
         switch (input) {
             case 1 -> jogar();
@@ -33,13 +33,13 @@ public class Base {
     }
 
 
-    public static void jogar(){
+    public static void jogar() throws IOException {
         // Esse metodo cosulta as classes perguntas e jogador
         System.out.println("Informe seu nickname: ");
         String NickName = entrada.next();
         Jogadores novoJogadores = new Jogadores();
         novoJogadores.setNickname(novoJogadores.toString(NickName)); // ATRIBUIDO O NOME DO JOGADOR
-        Perguntas.categoria(novoJogadores);
+        Perguntas.categoria();
         Jogadores.ranking();
     }
 
