@@ -1,3 +1,8 @@
+package PerguntasRespostas;
+
+import PerguntasRespostas.Base;
+import PerguntasRespostas.Jogadores;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -62,10 +67,13 @@ public class Perguntas {
 
 
     public static void musica(){
+        // Deve marcar os pontos, enviar para classe PerguntasRespostas.Jogadores
+        // Dev: Vinicius Santana
 
     }
 
     public static void curiosidade(){
         // Deve marcar os pontos e enviar para classe Pontuação
+        // Dev: Lucas
     }
 }

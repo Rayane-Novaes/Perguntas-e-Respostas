@@ -1,7 +1,5 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
+package PerguntasRespostas;
+
 
 public class Jogadores {
     private static String nickname;
@@ -46,6 +44,7 @@ public class Jogadores {
     }
 
     public int getErros() {
+
         return this.erros;
     }
 
