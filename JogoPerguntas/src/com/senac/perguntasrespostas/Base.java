@@ -1,6 +1,7 @@
 package com.senac.perguntasrespostas;
 
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.Scanner;
 
 public class Base {
@@ -9,20 +10,27 @@ public class Base {
 
 
     // -------------------------- METODOS DE AÇÃO DE JOGABILIDADE ------------------------------
-    public static void StarGamer() throws IOException {
+    public static void StarGamer() throws Exception {
         // INICIALIZAÇÃO ----------------------------------------------------
         System.out.println("------------ PERGUNTAS E RESPOSTAS -------------");
-        Continue();
         menu();
     }
 
-    public static void GamerOver(){}
-    public static void menu() throws IOException {
+    public static void GamerOver(){
+        // Adicionar o total de pontos que o usuário fez e o ranking que ele ficou
+        String nome_usuario = Jogadores.getNickname();
+        System.out.println(nome_usuario + "infelizmente você perdeu! Deseja continua?");
+        System.out.println("[1] SIM e [2] Não");
+    }
+
+    public static void menu() throws Exception {
                 // METODO MENU: Utilizado para chamar os outros metodos que dão ação para o jogo.
                 System.out.println("------------- Menu Principal -----------------");
                 System.out.println("[1] Jogar");
                 System.out.println("[2] Instruções");
                 System.out.println("[3] Créditos");
+                System.out.println("[3] Pontuação");
+
 
                 System.out.print("O que deseja fazer?");
                 int input = leiaInput(" > ", 4);
@@ -31,6 +39,7 @@ public class Base {
             case 1 -> jogar();
             case 2 -> instrucoes();
             case 3 -> creditos();
+            case 4 -> Pontuacao.rankingCategorias();
         }
     }
 
@@ -39,18 +48,21 @@ public class Base {
         // Esse metodo cosulta as classes perguntas e jogador
         System.out.println("Informe seu nickname: ");
         String NickName = entrada.next();
-        Jogadores novoJogadores = new Jogadores();
-        novoJogadores.setNickname(novoJogadores.toString(NickName)); // ATRIBUIDO O NOME DO JOGADOR
+        Jogadores novoJogador = new Jogadores();
+        novoJogador.setNickname(novoJogador.toString(NickName)); // ATRIBUIDO O NOME DO JOGADOR
         Perguntas.categoria();
-        Jogadores.ranking();
+        Pontuacao.rankingCategorias();
     }
 
     public static void instrucoes(){
         // Esse metodo vai trabalhar com arquivos
     }
-    public static void creditos(){
-        // Esse metodo vai trabalhar com arquivos
+
+    public static  void creditos() throws Exception {
+
     }
+
+
 
     //------------------------- METODOS AUXILIARES ------------------------------
     public static void Continue(){

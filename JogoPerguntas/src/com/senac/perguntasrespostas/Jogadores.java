@@ -15,6 +15,7 @@ public class Jogadores {
         return nickname;
     }
 
+
     public void setNickname(String nickname) {
         Jogadores.nickname = nickname;
     }
@@ -39,6 +40,8 @@ public class Jogadores {
         return this.acertos;
     }
 
+
+
     public void setAcertos(int acertos) {
         this.acertos = acertos;
     }
@@ -52,13 +55,11 @@ public class Jogadores {
         this.erros = erros;
     }
 
-    public static void pontuacao() {
-    }
-
-    public static void ranking() {
-    }
-
     public String toString(String nickName) {
         return nickName;
+    }
+
+    public int toInt(int acertos) {
+        return acertos;
     }
 }

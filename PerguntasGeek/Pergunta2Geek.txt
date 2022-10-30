@@ -1,0 +1,9 @@
+2. Em Stranger Things, qual é o nome do grupo que eles jogavam
+D&D?
+
+   [1] teste
+   [2] teste
+   [3] Hellfire club
+   [4] teste
+
+RESPOSTA:
