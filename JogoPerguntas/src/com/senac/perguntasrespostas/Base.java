@@ -1,4 +1,4 @@
-package PerguntasRespostas;
+package com.senac.perguntasrespostas;
 
 import java.io.IOException;
 import java.util.Scanner;

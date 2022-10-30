@@ -1,1 +1,1 @@
-# PerguntasRespostas.Perguntas-e-Respostas
+# com.senac.perguntasrespostas.Perguntas-e-Respostas

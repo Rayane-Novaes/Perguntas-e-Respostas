@@ -1,7 +1,4 @@
-package PerguntasRespostas;
-
-import PerguntasRespostas.Base;
-import PerguntasRespostas.Jogadores;
+package com.senac.perguntasrespostas;
 
 import java.io.BufferedReader;
 import java.io.IOException;

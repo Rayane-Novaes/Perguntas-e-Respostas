@@ -1,6 +1,4 @@
-package PerguntasRespostas;
-
-import PerguntasRespostas.Base;
+package com.senac.perguntasrespostas;
 
 import java.io.IOException;
 

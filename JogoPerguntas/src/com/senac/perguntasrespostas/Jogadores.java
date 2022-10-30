@@ -1,4 +1,4 @@
-package PerguntasRespostas;
+package com.senac.perguntasrespostas;
 
 
 public class Jogadores {
