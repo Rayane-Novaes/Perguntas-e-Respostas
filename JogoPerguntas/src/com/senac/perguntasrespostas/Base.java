@@ -29,23 +29,31 @@ public class Base {
                 System.out.println("[1] Jogar");
                 System.out.println("[2] Instruções");
                 System.out.println("[3] Créditos");
-                System.out.println("[3] Pontuação");
+                System.out.println("[4] Pontuação");
 
 
                 System.out.print("O que deseja fazer?");
                 int input = leiaInput(" > ", 4);
 
         switch (input) {
-            case 1 -> jogar();
-            case 2 -> instrucoes();
-            case 3 -> creditos();
-            case 4 -> Pontuacao.rankingCategorias();
+            case 1:
+ jogar();
+            case 2:
+ instrucoes();
+            case 3: 
+Path novoArquivo=Creditos.criarArquivo();            	
+Creditos.escrever(novoArquivo);
+String conteudo=Creditos.ler(novoArquivo);
+System.out.println(conteudo);
+
+            case 4:
+ Pontuacao.rankingCategorias();
         }
     }
 
 
     public static void jogar() throws IOException {
-        // Esse metodo cosulta as classes perguntas e jogador
+        // Esse metodo consulta as classes perguntas e jogador
         System.out.println("Informe seu nickname: ");
         String NickName = entrada.next();
         Jogadores novoJogador = new Jogadores();
@@ -56,10 +64,6 @@ public class Base {
 
     public static void instrucoes(){
         // Esse metodo vai trabalhar com arquivos
-    }
-
-    public static  void creditos() throws Exception {
-
     }
 
 
