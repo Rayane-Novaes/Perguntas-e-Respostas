@@ -16,6 +16,8 @@ public class PerguntasGeek {
     public static int visualizarAcertos = pontuacaojogador.getAcertos();
     public static int VisualizarErros = pontuacaojogador.getAcertos();
     public static int VidasJogador = pontuacaojogador.getVidas();
+
+    // ---------------------------------------------------------------------------
     public static void Pergunta1() throws IOException {
 
         // PERGUNTA 1 ----------------------------------------------------------------------------
@@ -62,7 +64,6 @@ public class PerguntasGeek {
             Pergunta2();
         }
     }
-
     public static void Pergunta2() throws IOException {
         // Deve marcar os pontos e enviar para classe Pontuação
         // PERGUNTA 2 ----------------------------------------------------------------------------
@@ -118,7 +119,6 @@ public class PerguntasGeek {
         }
 
     }
-
     public static void Pergunta3() throws Exception {
 
         // PERGUNTA 3 ----------------------------------------------------------------------------
@@ -168,7 +168,6 @@ public class PerguntasGeek {
             }
         }
     }
-
     public static void Pergunta4() throws IOException {
 
         // PERGUNTA 4 ----------------------------------------------------------------------------
@@ -220,7 +219,6 @@ public class PerguntasGeek {
             throw new RuntimeException(e);
         }
     }
-
     public static void Pergunta5() throws IOException {
 
         // PERGUNTA 5 ----------------------------------------------------------------------------
@@ -272,7 +270,6 @@ public class PerguntasGeek {
             throw new RuntimeException(e);
         }
     }
-
     public static void Pergunta6() throws IOException {
 
         // PERGUNTA 6 ----------------------------------------------------------------------------
@@ -324,7 +321,6 @@ public class PerguntasGeek {
             throw new RuntimeException(e);
         }
     }
-
     public static void Pergunta7() throws IOException {
 
         // PERGUNTA 7 ----------------------------------------------------------------------------
@@ -492,7 +488,7 @@ public class PerguntasGeek {
             int input = Base.leiaInput(" > ", 4);
 
 
-            if (input == 2 || input == 02) {
+            if (input == 3 || input == 03) {
                 pontosAtuais = pontosAtuais + 1;
                 pontuacaojogador.setAcertos(pontosAtuais);
                 visualizarAcertos = pontuacaojogador.getAcertos();
