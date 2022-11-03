@@ -1,9 +1,9 @@
 2. Em Stranger Things, qual é o nome do grupo que eles jogavam
 D&D?
 
-   [1] teste
-   [2] teste
+   [1] Fire D&D
+   [2] Super boys
    [3] Hellfire club
-   [4] teste
+   [4] Club D&D school
 
 RESPOSTA:
