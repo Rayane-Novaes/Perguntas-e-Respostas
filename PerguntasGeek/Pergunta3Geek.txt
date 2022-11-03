@@ -1,0 +1,9 @@
+3. Qual personagem após sofrer preconceito e perder sua família
+deseja se tornar o líder da vila?
+
+   [1] Goku
+   [2] Naruto
+   [3] Seiya
+   [4] Luffy
+
+RESPOSTA:

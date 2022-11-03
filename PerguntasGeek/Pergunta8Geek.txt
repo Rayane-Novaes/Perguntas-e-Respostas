@@ -1,0 +1,9 @@
+8. Considerado um personagem muito poderoso, mestre no ensino, tinha uma irmã “perigosa” e era apaixonado por um vilão. O
+personagem é...
+
+   [1] Professor girafales
+   [2] Doutor Egg
+   [3] Albus Dumbledore
+   [4] Tony Stark
+
+RESPOSTA:

@@ -16,16 +16,16 @@ public class Creditos {
 	public static void escrever(Path novoArquivo) throws Exception {
 	Files.writeString(novoArquivo,
 			"Creditos do jogo \r\n" +
-	"Este jogo foi criado e desenvolvido com a finalidade de trazer conhecimento a você e seus amigos enquanto se divertem respondendo a quizes de diferentes categorias. \r\n" +
+					"Este jogo foi criado e desenvolvido com a finalidade de trazer conhecimento a você e seus amigos enquanto se divertem respondendo a quizes de diferentes categorias. \r\n" +
 					"Acumule pontos no ranking e sabedoria na mente! \r\n" +
-	"CURSO: ANALISE E DESENVOLVIMENTO DE SISTEMAS \r\n" +
-	"ANO DE CRIACAO: 2022\r\n" +
+					"CURSO: ANALISE E DESENVOLVIMENTO DE SISTEMAS \r\n" +
+					"ANO DE CRIACAO: 2022\r\n" +
 					"DESENVOLVEDORES\r\n" +
-						"LUCAS ALMEIDA NASCIMENTO \r\n" +
-			"PAMERA ROZEMBRA \r\n" +
-	"RAYANE NOVAES DOS SANTOS \r\n" +
-	"VINICIUS SANTANA \r\n" +
-			"VINICIUS SOUZA ARAUJO \r\n", 
+					"LUCAS ALMEIDA NASCIMENTO \r\n" +
+					"PAMERA ROZEMBRA \r\n" +
+					"RAYANE NOVAES DOS SANTOS \r\n" +
+					"VINICIUS SANTANA \r\n" +
+					"VINICIUS SOUZA ARAUJO \r\n",
 			StandardCharsets.ISO_8859_1, 
 			StandardOpenOption.APPEND);
 	

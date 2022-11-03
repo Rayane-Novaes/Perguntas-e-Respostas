@@ -16,11 +16,17 @@ public class Base {
         menu();
     }
 
-    public static void GamerOver(){
+    public static void GamerOver() throws Exception {
         // Adicionar o total de pontos que o usuário fez e o ranking que ele ficou
         String nome_usuario = Jogadores.getNickname();
-        System.out.println(nome_usuario + "infelizmente você perdeu! Deseja continua?");
+        System.out.println( "Infelizmente você perdeu! " + " " + nome_usuario + " " + "Deseja ver sua pontuacao?");
         System.out.println("[1] SIM e [2] Não");
+        int input = leiaInput(" > ", 2);
+        if (input == 1 || input == 01){
+            Pontuacao.rankingCategorias();
+        } else {
+            menu();
+        }
     }
 
     public static void menu() throws Exception {
@@ -37,17 +43,17 @@ public class Base {
 
         switch (input) {
             case 1:
- jogar();
+                jogar();
             case 2:
- instrucoes();
+                instrucoes();
             case 3: 
-Path novoArquivo=Creditos.criarArquivo();            	
-Creditos.escrever(novoArquivo);
-String conteudo=Creditos.ler(novoArquivo);
-System.out.println(conteudo);
+                Path novoArquivo=Creditos.criarArquivo();
+                Creditos.escrever(novoArquivo);
+                String conteudo=Creditos.ler(novoArquivo);
+                System.out.println(conteudo);
 
             case 4:
- Pontuacao.rankingCategorias();
+                Pontuacao.rankingCategorias();
         }
     }
 
@@ -67,8 +73,7 @@ System.out.println(conteudo);
     }
 
 
-
-    //------------------------- METODOS AUXILIARES ------------------------------
+    //-------------------------------- METODOS AUXILIARES ------------------------------
     public static void Continue(){
         // Utilizei o metodo continue quando terminarem uma ação. Por exemplo:
         // Usuário deseja ir para próxima pergunta, ENTÃO DIGITE QUALQUER COISA PRA CONTINUA.

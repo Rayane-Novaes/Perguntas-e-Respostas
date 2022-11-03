@@ -8,7 +8,22 @@ public class Pontuacao {
         System.out.println("[3] Conhecimentos gerais");
 
         int input = Base.leiaInput(" > ", 3);
+        switch (input){
+            case 1:
+                break;
+
+            case 2:
+                break;
+
+            case 3:
+                break;
+        }
     }
 
+    public static void Ordenacao(){}
+    public static void CriarArquivo(){}
+    public static void EscreverArquivo(){}
+
+    public static void LerArquivo(){}
 
 }

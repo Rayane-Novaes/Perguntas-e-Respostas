@@ -1,0 +1,8 @@
+4. Qual é o nome da personagem que é filho(a) adotivo(a) do Thanos?
+
+   [1] Gamora
+   [2] Steven
+   [3] Diana
+   [4] Peter
+
+RESPOSTA:
