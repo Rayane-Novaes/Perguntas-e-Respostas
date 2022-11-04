@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 
 public class Creditos {
-
+	
 	public static Path criarArquivo() throws Exception {
 		Path novoDiretorio = Files.createDirectory(Path.of("creditos do jogo"));
 		Path novoArquivo = Files.createFile(novoDiretorio.resolve("creditos.txt"));
@@ -32,8 +32,8 @@ public class Creditos {
 }	
 	public static String ler(Path novoArquivo) throws Exception {
 		String conteudo = Files.readString(novoArquivo, StandardCharsets.ISO_8859_1);
-		
 				return conteudo;
 	}
+
 
 }

@@ -1,4 +1,5 @@
-Creditos do jogo 
+Creditos do jogo
+
 Este jogo foi criado e desenvolvido com a finalidade de trazer conhecimento a você e seus amigos enquanto se divertem respondendo a quizes de diferentes categorias. 
 Acumule pontos no ranking e sabedoria na mente! 
 CURSO: ANALISE E DESENVOLVIMENTO DE SISTEMAS 

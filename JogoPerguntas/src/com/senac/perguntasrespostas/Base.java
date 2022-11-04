@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Scanner;
 
+
+
 public class Base {
 
     static Scanner entrada = new Scanner(System.in);
@@ -44,13 +46,14 @@ public class Base {
         switch (input) {
             case 1:
                 jogar();
+
             case 2:
                 instrucoes();
-            case 3: 
-                Path novoArquivo=Creditos.criarArquivo();
+
+            case 3:
+                Path novoArquivo = Creditos.criarArquivo();
                 Creditos.escrever(novoArquivo);
-                String conteudo=Creditos.ler(novoArquivo);
-                System.out.println(conteudo);
+                String conteudo = Creditos.ler(novoArquivo);
 
             case 4:
                 Pontuacao.rankingCategorias();

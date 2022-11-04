@@ -324,7 +324,7 @@ public class PerguntasGeek {
     public static void Pergunta7() throws IOException {
 
         // PERGUNTA 7 ----------------------------------------------------------------------------
-        String arquivo = "PerguntasGeek/Pergunta6Geek.txt";
+        String arquivo = "PerguntasGeek/Pergunta7Geek.txt";
         Path caminho = Paths.get(arquivo);
 
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(Files.newInputStream(caminho)))) {
@@ -521,7 +521,6 @@ public class PerguntasGeek {
                 Base.GamerOver();
             } else {
                 System.out.println("Parabens! Você venceu! Sua pontuação: ");
-                Pontuacao.LerArquivo();
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
