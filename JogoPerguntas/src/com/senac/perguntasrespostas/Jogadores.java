@@ -4,11 +4,17 @@ package com.senac.perguntasrespostas;
 public class Jogadores {
     private static String nickname;
     private int vidas = 3;
-    private int pontuacao = 0;
     private int acertos;
     private int erros;
 
-    public Jogadores() {
+    private String categoria;
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
     public static String getNickname() {
@@ -28,19 +34,10 @@ public class Jogadores {
         this.vidas = vidas;
     }
 
-    public int getPontuacao() {
-        return this.pontuacao;
-    }
-
-    public void setPontuacao(int pontuacao) {
-        this.pontuacao = pontuacao;
-    }
 
     public int getAcertos() {
         return this.acertos;
     }
-
-
 
     public void setAcertos(int acertos) {
         this.acertos = acertos;

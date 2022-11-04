@@ -21,7 +21,7 @@ public class Pontuacao {
         int input = Base.leiaInput(" > ", 3);
         switch (input){
             case 1:
-                escreverGeek();
+                escrever();
                 break;
 
             case 2:
@@ -33,7 +33,7 @@ public class Pontuacao {
     }
 
 
-    public static void escreverGeek() throws IOException {
+    public static void escrever() throws IOException {
 
         int Acertos = pontuacaojogador.getAcertos();
         String nome_usuario = Jogadores.getNickname();
@@ -43,11 +43,16 @@ public class Pontuacao {
         // Escrevendo no arquivo
         Path arquivo = Path.of("PontuacaoArquivo/PontuacaoGeek.txt");
         try (OutputStream outputStream = Files.newOutputStream(arquivo, StandardOpenOption.APPEND)) {
-            for (int i=0;i<=9;i++)
-                if (i < 1){
+            for (int i = 0; i <= 9; i++)
+                if (i < 1) {
                     outputStream.write(String.valueOf(texto_nome + "\r\n").getBytes());
                 }
         }
+        Ordenacao();
+    }
+
+    public static void Ordenacao() throws IOException {
+        System.out.println("teste");
         leitura();
     }
 
@@ -60,12 +65,5 @@ public class Pontuacao {
                 System.out.println(line);
         }
     }
-    public static void OrdenacaoGeek(){
-        System.out.println("teste");
-    }
-
-
-
-
 
 }
