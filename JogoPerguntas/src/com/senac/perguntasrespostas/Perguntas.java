@@ -1,13 +1,13 @@
 package com.senac.perguntasrespostas;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
-import static com.senac.perguntasrespostas.PerguntasGeek.Pergunta1;
+import java.io.IOException;
+
+
+
+
+
+
 
 public class Perguntas {
 

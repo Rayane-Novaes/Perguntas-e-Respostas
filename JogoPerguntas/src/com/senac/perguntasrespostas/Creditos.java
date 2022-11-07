@@ -3,6 +3,7 @@ package com.senac.perguntasrespostas;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
 public class Creditos {
@@ -35,5 +36,18 @@ public class Creditos {
 				return conteudo;
 	}
 
+public static void creditos(Path novoArquivo) throws Exception {
+	novoArquivo = Paths.get("creditos do jogo/creditos.txt");
+	if(!Files.exists(novoArquivo)) {
+		novoArquivo =criarArquivo();
+        escrever(novoArquivo);
+	String conteudo = ler(novoArquivo);
+System.out.println(conteudo);
+	}
+	else {
+      String conteudo =ler(novoArquivo);
+System.out.println(conteudo);
+		}
+}
 
 }

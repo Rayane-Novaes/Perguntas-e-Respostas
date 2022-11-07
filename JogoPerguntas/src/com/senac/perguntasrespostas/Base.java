@@ -1,7 +1,9 @@
 package com.senac.perguntasrespostas;
 
 import java.io.IOException;
-import java.nio.file.Path;
+
+
+
 import java.util.Scanner;
 
 
@@ -35,9 +37,9 @@ public class Base {
                 // METODO MENU: Utilizado para chamar os outros metodos que dÃ£o aÃ§Ã£o para o jogo.
                 System.out.println("------------- Menu Principal -----------------");
                 System.out.println("[1] Jogar");
-                System.out.println("[2] InstruÃ§Ãµes");
-                System.out.println("[3] CrÃ©ditos");
-                System.out.println("[4] PontuaÃ§Ã£o");
+                System.out.println("[2] Instruções");
+                System.out.println("[3] Créditos");
+                System.out.println("[4] Pontuação");
 
 
                 System.out.print("O que deseja fazer?");
@@ -51,10 +53,8 @@ public class Base {
                 instrucoes();
 
             case 3:
-                Path novoArquivo = Creditos.criarArquivo();
-                Creditos.escrever(novoArquivo);
-                String conteudo = Creditos.ler(novoArquivo);
-
+            	//o null significa que os argumentos do método creditos() são referentes a outros métodos, não a essa classe base.java
+            	Creditos.creditos(null);
             case 4:
                 Pontuacao.rankingCategorias();
         }
