@@ -132,7 +132,7 @@ public class PerguntasGeek {
             int input = Base.leiaInput(" > ", 4);
 
 
-            if (input == 2 || input == 02) {
+            if (input == 2 || input == 02) { // Verifica se a Alternativa está correta
                 pontosAtuais = pontosAtuais + 1;
                 pontuacaojogador.setAcertos(pontosAtuais);
                 visualizarAcertos = pontuacaojogador.getAcertos();

@@ -18,24 +18,20 @@ public class Perguntas {
 
         switch (input){
             case 1:
-                geek();
+                PerguntasGeek.Pergunta1();
 
             case 2:
                 musica();
+
             case 3:
-                curiosidade();
+                PerguntasCall.Pergunta1();
         }
     }
-    public static void geek() throws IOException {
-       PerguntasGeek.Pergunta1();
-    }
+
     public static void musica(){
         // Deve marcar os pontos, enviar para classe PerguntasRespostas.Jogadores
         // Dev: Vinicius Santana
 
     }
-    public static void curiosidade(){
-        // Deve marcar os pontos e enviar para classe Pontuação
-        // Dev: Lucas
-    }
+
 }
