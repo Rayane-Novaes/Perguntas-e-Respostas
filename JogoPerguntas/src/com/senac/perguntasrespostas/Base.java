@@ -6,25 +6,33 @@ import java.io.IOException;
 
 import java.util.Scanner;
 
+/**
+ * CLASSE BASE TEM TODOS OS MET”DOS B¡SICOS PARA QUE O NOSSO JOGO FUNCIONE, POR EXEMPLO:
+ * JOGAR - COME«A O JOGO E MOSTRA AS PERGUNTAS PARA O USU¡RIO.
+ */
 
 
 public class Base {
 
+    public static void main(String[] args) throws Exception {
+        StarGamer();
+    }
+
     static Scanner entrada = new Scanner(System.in);
 
 
-    // -------------------------- METODOS DE A√á√ÉO DE JOGABILIDADE ------------------------------
+    //-------------------------------- METODOS AUXILIARES ------------------------------
     public static void StarGamer() throws Exception {
-        // INICIALIZA√á√ÉO ----------------------------------------------------
+        // INICIALIZA«√O ----------------------------------------------------
         System.out.println("------------ PERGUNTAS E RESPOSTAS -------------");
         menu();
     }
 
     public static void GamerOver() throws Exception {
-        // Adicionar o total de pontos que o usu√°rio fez e o ranking que ele ficou
+        // Adicionar o total de pontos que o usuario fez e o ranking que ele ficou
         String nome_usuario = Jogadores.getNickname();
-        System.out.println( "Infelizmente voc√™ perdeu! " + " " + nome_usuario + " " + "Deseja ver sua pontuacao?");
-        System.out.println("[1] SIM e [2] N√£o");
+        System.out.println( "Infelizmente vocÍ perdeu! " + " " + nome_usuario + " " + "Deseja ver sua pontuacao?");
+        System.out.println("[1] SIM e [2] N√O");
         int input = leiaInput(" > ", 2);
         if (input == 1 || input == 01){
             Pontuacao.rankingCategorias();
@@ -48,21 +56,29 @@ public class Base {
         switch (input) {
             case 1:
                 jogar();
+                break;
 
             case 2:
                 instrucoes();
+                break;
 
             case 3:
             	//o null significa que os argumentos do mÈtodo creditos() s„o referentes a outros mÈtodos, n„o a essa classe base.java
             	Creditos.creditos(null);
+                break;
+
             case 4:
                 Pontuacao.rankingCategorias();
+                break;
         }
     }
-
-
+    /***
+     * @jogar - MÈtodo altera o atributo NickName do objeto NovoJogador de acordo com a entrada informada
+     * pelo usu·rio.
+     * Feito a alteraÁ„o no objeto, exibir para os usu·rios a categoria.
+     * @throws IOException
+     */
     public static void jogar() throws IOException {
-        // Esse metodo consulta as classes perguntas e jogador
         System.out.println("Informe seu nickname: ");
         String NickName = entrada.next();
         Jogadores novoJogador = new Jogadores();
@@ -76,17 +92,14 @@ public class Base {
     }
 
 
-    //-------------------------------- METODOS AUXILIARES ------------------------------
-    public static void Continue(){
-        // Utilizei o metodo continue quando terminarem uma a√ß√£o. Por exemplo:
-        // Usu√°rio deseja ir para pr√≥xima pergunta, ENT√ÉO DIGITE QUALQUER COISA PRA CONTINUA.
-
-        System.out.println("\nDigite alguma coisa para continua.");
-        entrada.next();
-    }
+    /***
+     * METODO LEIAINPUT: Tratamento de erro para evitar que usuarios digite a informaÁıes erradas.
+     * OPS: Apenas para valores tipo INT!
+     * @param prompt
+     * @param numEscolhas
+     * @return
+     */
     public static int leiaInput(String prompt, int numEscolhas) {
-        // METODO LEIAINPUT: Tratamento de erro para evitar que usu√°rio digite a informa√ß√£o errada.
-        // OPS: Apenas para valores tipo INT!
 
         int input;
         do {

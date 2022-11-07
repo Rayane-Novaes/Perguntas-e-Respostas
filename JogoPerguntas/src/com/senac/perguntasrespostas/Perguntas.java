@@ -3,16 +3,8 @@ package com.senac.perguntasrespostas;
 
 import java.io.IOException;
 
-
-
-
-
-
-
 public class Perguntas {
-
     static Jogadores pontuacaojogador = new Jogadores();
-
     public static void categoria() throws IOException {
         String nome_usuario = Jogadores.getNickname();
         System.out.println("Bem vindo!" + nome_usuario);
@@ -33,8 +25,6 @@ public class Perguntas {
             case 3:
                 curiosidade();
         }
-        Base.Continue();
-
     }
     public static void geek() throws IOException {
        PerguntasGeek.Pergunta1();

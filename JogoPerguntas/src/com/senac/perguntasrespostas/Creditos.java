@@ -41,12 +41,12 @@ public static void creditos(Path novoArquivo) throws Exception {
 	if(!Files.exists(novoArquivo)) {
 		novoArquivo =criarArquivo();
         escrever(novoArquivo);
-	String conteudo = ler(novoArquivo);
-System.out.println(conteudo);
+		String conteudo = ler(novoArquivo);
+		System.out.println(conteudo);
 	}
 	else {
-      String conteudo =ler(novoArquivo);
-System.out.println(conteudo);
+      String conteudo = ler(novoArquivo);
+	  System.out.println(conteudo);
 		}
 }
 
