@@ -1,0 +1,9 @@
+3. Qual o album mais vendido da história ?
+ 
+   [1] The Dark Side of the Moon - Pink-Floyd
+   [2] Thriller - Michael Jackson 
+   [3] Bodyguard - Whitney Houston 
+   [4] Nevermind - Nirvana  
+
+R:
+   

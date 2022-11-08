@@ -1,0 +1,9 @@
+2. Quantas notas musicais existem?
+ 
+   [1] 10
+   [2] 7 
+   [3] 9
+   [4] 13  
+
+R:
+   

@@ -1,0 +1,8 @@
+1. Qual o genero musical mais ouvido atualmente ?
+ 
+   [1] Rap
+   [2] Gospel
+   [3] Rock
+   [4] Pop
+   
+R:

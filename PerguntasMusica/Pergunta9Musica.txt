@@ -1,0 +1,8 @@
+9. Qual o nome do Rapper 2Pac ?
+
+   [1] Tupac Johnson 
+   [2] Charles Tupac 
+   [3] Tupac Amaru Shakur  
+   [4] Tupac Shakur Jones 
+
+R:

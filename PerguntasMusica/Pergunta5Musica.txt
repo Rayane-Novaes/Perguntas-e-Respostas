@@ -1,0 +1,8 @@
+5. Qual o nome do primeiro álbum de estúdio da cantora Beyoncé ?
+
+   [1] Renaissance
+   [2] Lemonade
+   [3] Dangerously in Love 
+   [4] 4 
+
+R:
