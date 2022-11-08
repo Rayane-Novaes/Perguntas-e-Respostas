@@ -83,7 +83,7 @@ public class Base {
         String NickName = entrada.next();
         Jogadores novoJogador = new Jogadores();
         novoJogador.setNickname(novoJogador.toString(NickName)); // ATRIBUIDO O NOME DO JOGADOR
-        Perguntas.categoria();
+        categoria();
         Pontuacao.rankingCategorias();
     }
 
@@ -114,5 +114,27 @@ public class Base {
         return input;
     }
 
+    public static void categoria() throws IOException {
+        String nome_usuario = Jogadores.getNickname();
+        System.out.println("Bem vindo!" + nome_usuario);
+        System.out.println("Escolha a categoria antes de iniciar:");
+        System.out.println("[1] Geek");
+        System.out.println("[2] Músicas");
+        System.out.println("[3] Conhecimentos gerais");
+        System.out.print("O que deseja fazer?");
 
+        int input = Base.leiaInput(" > ", 3);
+
+        switch (input) {
+            case 1:
+                PerguntasGeek.Pergunta1();
+
+            case 2:
+                PerguntasMusica.Pergunta1Musica();
+
+            case 3:
+                PerguntasCall.Pergunta1();
+        }
+    }
+    
 }
