@@ -9,9 +9,9 @@ import java.nio.file.Paths;
 
 
 
-import static com.senac.perguntasrespostas.Perguntas.pontuacaojogador;
-
 public class PerguntasCall {
+
+    static Jogadores pontuacaojogador = new Jogadores();
     public static int pontosAtuais = 0;
     public static int pontosErros = 0;
     public static int vidasAtuais = 3;

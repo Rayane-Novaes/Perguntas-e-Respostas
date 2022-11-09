@@ -8,8 +8,7 @@ import java.nio.file.Paths;
 
 import java.nio.file.StandardOpenOption;
 
-import static com.senac.perguntasrespostas.Perguntas.pontuacaojogador;
-import static java.nio.charset.StandardCharsets.*;
+import static com.senac.perguntasrespostas.PerguntasGeek.pontuacaojogador;
 
 public class Pontuacao {
     public static void rankingCategorias() throws IOException {

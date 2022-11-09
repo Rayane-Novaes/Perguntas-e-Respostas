@@ -6,12 +6,16 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import static com.senac.perguntasrespostas.Perguntas.pontuacaojogador;
+
 
 public class PerguntasMusica {
+
+    static Jogadores pontuacaojogador = new Jogadores();
     public static int pontosAtuais = 0;
     public static int pontosErros = 0;
     public static int vidasAtuais = 3;
+
+
     public static int visualizarAcertos = pontuacaojogador.getAcertos();
     public static int VisualizarErros = pontuacaojogador.getAcertos();
     public static int VidasJogador = pontuacaojogador.getVidas();
