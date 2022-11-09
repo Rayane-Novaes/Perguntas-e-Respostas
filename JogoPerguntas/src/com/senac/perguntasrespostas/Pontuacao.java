@@ -8,29 +8,14 @@ import java.nio.file.Paths;
 
 import java.nio.file.StandardOpenOption;
 
+
 import static com.senac.perguntasrespostas.PerguntasGeek.pontuacaojogador;
 
 public class Pontuacao {
-    public static void rankingCategorias() throws IOException {
-        System.out.println("Escolha a categoria de ranking:");
-        System.out.println("[1] Geek");
-        System.out.println("[2] Músicas");
-        System.out.println("[3] Conhecimentos gerais");
 
-        int input = Base.leiaInput(" > ", 3);
-        switch (input){
-            case 1:
-                escrever();
-                break;
-
-            case 2:
-                break;
-
-            case 3:
-                break;
-        }
+    public static void star() throws IOException {
+        escrever();
     }
-
 
     public static void escrever() throws IOException {
 

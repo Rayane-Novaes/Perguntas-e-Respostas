@@ -10,7 +10,6 @@ import java.nio.file.Paths;
 public class PerguntasGeek {
 
     static Jogadores pontuacaojogador = new Jogadores();
-
     public static int pontosAtuais = 0;
     public static int pontosErros = 0;
     public static int vidasAtuais = 3;

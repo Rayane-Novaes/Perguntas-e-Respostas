@@ -35,7 +35,7 @@ public class Base {
         System.out.println("[1] SIM e [2] NÃO");
         int input = leiaInput(" > ", 2);
         if (input == 1 || input == 01){
-            Pontuacao.rankingCategorias();
+            Pontuacao.star();
         } else {
             menu();
         }
@@ -68,7 +68,7 @@ public class Base {
                 break;
 
             case 4:
-                Pontuacao.rankingCategorias();
+                Pontuacao.star();
                 break;
         }
     }
@@ -84,7 +84,7 @@ public class Base {
         Jogadores novoJogador = new Jogadores();
         novoJogador.setNickname(novoJogador.toString(NickName)); // ATRIBUIDO O NOME DO JOGADOR
         categoria();
-        Pontuacao.rankingCategorias();
+        Pontuacao.star();
     }
 
     public static void instrucoes(){

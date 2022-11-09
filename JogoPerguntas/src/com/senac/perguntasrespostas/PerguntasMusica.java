@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 
-
+import static com.senac.perguntasrespostas.PerguntasGeek.pontuacaojogador;
 public class PerguntasMusica {
 
     static Jogadores pontuacaojogador = new Jogadores();
