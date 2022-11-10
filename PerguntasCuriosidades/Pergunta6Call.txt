@@ -1,12 +1,6 @@
-6. No filme Matrix, qual é o verdadeiro nome de Neo? ##");
+ 6. Quem foi a primeira mulher a viajar para o espaço?
 
-
-(1) Gideon Emery");
-(2) Thomas A. Anderson");
-(3) Randall D. Kim");
-(4) Don Davis");
-
-
-Resposta correta é: (2) Thomas A. Anderson.");
-No mundo humano, Neo na verdade se chama Thomas A. Anderson e trabalha para uma empresa de softwares como programador.
-Ao conhecer Morpheus e ao descobrir toda a realidade da Matrix, ele assume a identidade de Neo.
+ 1) Sally Ride
+ 2) Valentina Tereshkova
+ 3) Kathryn D. Sullivan
+ 4) Svetlana Savitskaya
