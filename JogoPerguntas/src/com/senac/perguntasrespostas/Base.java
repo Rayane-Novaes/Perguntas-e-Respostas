@@ -7,8 +7,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * CLASSE BASE TEM TODOS OS METÓDOS BÁSICOS PARA QUE O NOSSO JOGO FUNCIONE, POR EXEMPLO:
- * JOGAR - COMEÇA O JOGO E MOSTRA AS PERGUNTAS PARA O USUÁRIO.
+ * CLASSE BASE TEM TODOS OS METï¿½DOS Bï¿½SICOS PARA QUE O NOSSO JOGO FUNCIONE, POR EXEMPLO:
+ * JOGAR - COMEï¿½A O JOGO E MOSTRA AS PERGUNTAS PARA O USUï¿½RIO.
  */
 
 
@@ -23,7 +23,7 @@ public class Base {
 
     //-------------------------------- METODOS AUXILIARES ------------------------------
     public static void StarGamer() throws Exception {
-        // INICIALIZAÇÃO ----------------------------------------------------
+        // INICIALIZAï¿½ï¿½O ----------------------------------------------------
         System.out.println("------------ PERGUNTAS E RESPOSTAS -------------");
         menu();
     }
@@ -31,8 +31,8 @@ public class Base {
     public static void GamerOver() throws Exception {
         // Adicionar o total de pontos que o usuario fez e o ranking que ele ficou
         String nome_usuario = Jogadores.getNickname();
-        System.out.println( "Infelizmente você perdeu! " + " " + nome_usuario + " " + "Deseja ver sua pontuacao?");
-        System.out.println("[1] SIM e [2] NÃO");
+        System.out.println( "Infelizmente vocï¿½ perdeu! " + " " + nome_usuario + " " + "Deseja ver sua pontuacao?");
+        System.out.println("[1] SIM e [2] Nï¿½O");
         int input = leiaInput(" > ", 2);
         if (input == 1 || input == 01){
             Pontuacao.star();
@@ -45,9 +45,9 @@ public class Base {
                 // METODO MENU: Utilizado para chamar os outros metodos que dÃ£o aÃ§Ã£o para o jogo.
                 System.out.println("------------- Menu Principal -----------------");
                 System.out.println("[1] Jogar");
-                System.out.println("[2] Instruções");
-                System.out.println("[3] Créditos");
-                System.out.println("[4] Pontuação");
+                System.out.println("[2] Instruï¿½ï¿½es");
+                System.out.println("[3] Crï¿½ditos");
+                System.out.println("[4] Pontuaï¿½ï¿½o");
 
 
                 System.out.print("O que deseja fazer?");
@@ -59,11 +59,11 @@ public class Base {
                 break;
 
             case 2:
-                instrucoes();
+            	Regras.instrucoes();
                 break;
 
             case 3:
-            	//o null significa que os argumentos do método creditos() são referentes a outros métodos, não a essa classe base.java
+            	//o null significa que os argumentos do mï¿½todo creditos() sï¿½o referentes a outros mï¿½todos, nï¿½o a essa classe base.java
             	Creditos.creditos(null);
                 break;
 
@@ -73,9 +73,9 @@ public class Base {
         }
     }
     /***
-     * @jogar - Método altera o atributo NickName do objeto NovoJogador de acordo com a entrada informada
-     * pelo usuário.
-     * Feito a alteração no objeto, exibir para os usuários a categoria.
+     * @jogar - Mï¿½todo altera o atributo NickName do objeto NovoJogador de acordo com a entrada informada
+     * pelo usuï¿½rio.
+     * Feito a alteraï¿½ï¿½o no objeto, exibir para os usuï¿½rios a categoria.
      * @throws IOException
      */
     public static void jogar() throws IOException {
@@ -87,13 +87,9 @@ public class Base {
         Pontuacao.star();
     }
 
-    public static void instrucoes(){
-        // Esse metodo vai trabalhar com arquivos
-    }
-
-
+    
     /***
-     * METODO LEIAINPUT: Tratamento de erro para evitar que usuarios digite a informações erradas.
+     * METODO LEIAINPUT: Tratamento de erro para evitar que usuarios digite a informaï¿½ï¿½es erradas.
      * OPS: Apenas para valores tipo INT!
      * @param prompt
      * @param numEscolhas
@@ -119,7 +115,7 @@ public class Base {
         System.out.println("Bem vindo!" + nome_usuario);
         System.out.println("Escolha a categoria antes de iniciar:");
         System.out.println("[1] Geek");
-        System.out.println("[2] Músicas");
+        System.out.println("[2] Mï¿½sicas");
         System.out.println("[3] Conhecimentos gerais");
         System.out.print("O que deseja fazer?");
 

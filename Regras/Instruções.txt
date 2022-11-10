@@ -1,0 +1,15 @@
+INSTRUÇÕES
+Através de uma jogabilidade simples e intuitiva, o Answer Genius tem como objetivo tornar-te um gênio das respostas enquanto se diverte tentando acertar nossas perguntas e ganhar pontos.
+Ao entrares no jogo, você irá se deparar com o seguinte menu de opções:
+Digite 1 para jogar
+Digite 2 para instruções
+Digite 3 para ver os créditos do jogo
+Digite 4 para ver o ranking
+
+JOGABILIDADE
+Ao selecionar a opção jogar, você deverá escolher três categorias: geek, músicas ou conhecimentos gerais
+Cada categoria possui 10 perguntas e você começa o jogo com 3 vidas.
+A cada pergunta que você erra, uma vida é perdida.
+Se você errar 3 perguntas o jogo acaba e você precisará voltar ao início.
+Você precisa acertar no mínimo 8 questões para vencer. Mas, se você conseguir acertar as 10 perguntas sem perder nenhuma vida, você se torna o gênio das respostas e terá grandes chances de estar no topo do ranking!
+Vamos lá! Concentre-se e boa sorte!
