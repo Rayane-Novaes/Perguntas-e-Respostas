@@ -1,7 +1,6 @@
 package com.senac.perguntasrespostas;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -22,7 +21,7 @@ public class Pontuacao {
         int Acertos = pontuacaojogador.getAcertos();
         String nome_usuario = Jogadores.getNickname();
 
-        String texto_nome = "PLAY: " + nome_usuario + "\n" + "PONTUACAO: " + Acertos;
+        String texto_nome = nome_usuario + "-" + Acertos;
 
         // Escrevendo no arquivo
         Path arquivo = Path.of("PontuacaoArquivo/PontuacaoGeek.txt");
@@ -36,7 +35,6 @@ public class Pontuacao {
     }
 
     public static void Ordenacao() throws IOException {
-        System.out.println("teste");
         leitura();
     }
 
