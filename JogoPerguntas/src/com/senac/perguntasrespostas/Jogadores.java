@@ -7,15 +7,6 @@ public class Jogadores {
     private int acertos;
     private int erros;
 
-    private String categoria;
-
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
 
     public static String getNickname() {
         return nickname;
@@ -58,5 +49,8 @@ public class Jogadores {
 
     public int toInt(int acertos) {
         return acertos;
+    }
+
+    public void setAcertos(String linhaValore) {
     }
 }

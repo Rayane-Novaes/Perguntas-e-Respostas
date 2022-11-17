@@ -45,9 +45,9 @@ public class Base {
                 // METODO MENU: Utilizado para chamar os outros metodos que dão ação para o jogo.
                 System.out.println("------------- Menu Principal -----------------");
                 System.out.println("[1] Jogar");
-                System.out.println("[2] Instru��es");
-                System.out.println("[3] Cr�ditos");
-                System.out.println("[4] Pontua��o");
+                System.out.println("[2] Instrucoes");
+                System.out.println("[3] Creditos");
+                System.out.println("[4] Pontuacao");
 
 
                 System.out.print("O que deseja fazer?");
@@ -124,12 +124,15 @@ public class Base {
         switch (input) {
             case 1:
                 PerguntasGeek.Pergunta1();
+                break;
 
             case 2:
                 PerguntasMusica.Pergunta1Musica();
+                break;
 
             case 3:
                 PerguntasCall.Pergunta1();
+                break;
         }
     }
     

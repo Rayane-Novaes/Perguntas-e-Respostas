@@ -495,7 +495,7 @@ public static void Pergunta10Musica() throws IOException{
             Base.GamerOver();
         }else  {
             System.out.println("Parabens! Você venceu! Sua pontuação: ");
-            Pontuacao.leitura();
+            Pontuacao.CriacaoArrayList();
             
         }
     } catch (Exception e) {

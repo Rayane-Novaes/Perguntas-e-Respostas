@@ -101,8 +101,8 @@ public class PerguntasGeek {
                 VisualizarErros = pontuacaojogador.getErros();
                 VidasJogador = pontuacaojogador.getVidas();
 
-                System.out.println("Voce erro! Parece que nem com a musica favorita voce te salvaria do Vecna.");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Você erro! Parece que nem com a música favorita você te salvaria do Vecna.");
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de erros: " + VisualizarErros);
                 System.out.println("Total de vidas: " + VidasJogador);
             }
@@ -138,8 +138,8 @@ public class PerguntasGeek {
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VidasJogador = pontuacaojogador.getVidas();
 
-                System.out.println("Parabens! Voce acertou!");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Parabens! Você acertou!");
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de vidas: " + VidasJogador);
 
             } else {
@@ -156,8 +156,8 @@ public class PerguntasGeek {
                 VisualizarErros = pontuacaojogador.getErros();
                 VidasJogador = pontuacaojogador.getVidas();
 
-                System.out.println("Voce erro! Voce nao tem o jeito ninja.");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Você erro! Você não tem o jeito ninja.");
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de erros: " + VisualizarErros);
                 System.out.println("Total de vidas: " + VidasJogador);
             }
@@ -188,7 +188,7 @@ public class PerguntasGeek {
                 VidasJogador = pontuacaojogador.getVidas();
 
                 System.out.println("Parabens! Você acertou!");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de vidas: " + VidasJogador);
 
             } else {
@@ -205,8 +205,8 @@ public class PerguntasGeek {
                 VisualizarErros = pontuacaojogador.getErros();
                 VidasJogador = pontuacaojogador.getVidas();
 
-                System.out.println("Voce erro! Voce nao tem o jeito ninja.");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Você erro! Você não tem o jeito ninja.");
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de erros: " + VisualizarErros);
                 System.out.println("Total de vidas: " + VidasJogador);
             }
@@ -238,8 +238,8 @@ public class PerguntasGeek {
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VidasJogador = pontuacaojogador.getVidas();
 
-                System.out.println("Parabens! Voce acertou!");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Parabens! Você acertou!");
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de vidas: " + VidasJogador);
 
             } else {
@@ -256,8 +256,8 @@ public class PerguntasGeek {
                 VisualizarErros = pontuacaojogador.getErros();
                 VidasJogador = pontuacaojogador.getVidas();
 
-                System.out.println("Voce perdeu! Mas quem dizer que isso é problema meu...");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Você perdeu! Mas quem dizer que isso é problema meu...");
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de erros: " + VisualizarErros);
                 System.out.println("Total de vidas: " + VidasJogador);
             }
@@ -289,8 +289,8 @@ public class PerguntasGeek {
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VidasJogador = pontuacaojogador.getVidas();
 
-                System.out.println("Parabens! Voce acertou!");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Parabens! Você acertou!");
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de vidas: " + VidasJogador);
 
             } else {
@@ -307,8 +307,8 @@ public class PerguntasGeek {
                 VisualizarErros = pontuacaojogador.getErros();
                 VidasJogador = pontuacaojogador.getVidas();
 
-                System.out.println("Voce perdeu! Seu riquinho de merda");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Você perdeu! Seu riquinho de merda");
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de erros: " + VisualizarErros);
                 System.out.println("Total de vidas: " + VidasJogador);
             }
@@ -340,8 +340,8 @@ public class PerguntasGeek {
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VidasJogador = pontuacaojogador.getVidas();
 
-                System.out.println("Parabens! Voce acertou!");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Parabens! Você acertou!");
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de vidas: " + VidasJogador);
 
             } else {
@@ -358,8 +358,8 @@ public class PerguntasGeek {
                 VisualizarErros = pontuacaojogador.getErros();
                 VidasJogador = pontuacaojogador.getVidas();
 
-                System.out.println("Voce perdeu! Is mi Mário!");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Você perdeu! Is mi Mário!");
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de erros: " + VisualizarErros);
                 System.out.println("Total de vidas: " + VidasJogador);
             }
@@ -391,8 +391,8 @@ public class PerguntasGeek {
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VidasJogador = pontuacaojogador.getVidas();
 
-                System.out.println("Parabens! Voce acertou!");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Parabens! Você acertou!");
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de vidas: " + VidasJogador);
 
             } else {
@@ -409,8 +409,8 @@ public class PerguntasGeek {
                 VisualizarErros = pontuacaojogador.getErros();
                 VidasJogador = pontuacaojogador.getVidas();
 
-                System.out.println("Voce perdeu! Seu riquinho de merda");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Você perdeu! Seu riquinho de merda");
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de erros: " + VisualizarErros);
                 System.out.println("Total de vidas: " + VidasJogador);
             }
@@ -442,8 +442,8 @@ public class PerguntasGeek {
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VidasJogador = pontuacaojogador.getVidas();
 
-                System.out.println("Parabens! Voce acertou!");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Parabens! Você acertou!");
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de vidas: " + VidasJogador);
 
             } else {
@@ -461,7 +461,7 @@ public class PerguntasGeek {
                 VidasJogador = pontuacaojogador.getVidas();
 
                 System.out.println("Você perdeu! Seu riquinho de merda");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de erros: " + VisualizarErros);
                 System.out.println("Total de vidas: " + VidasJogador);
             }
@@ -494,8 +494,8 @@ public class PerguntasGeek {
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VidasJogador = pontuacaojogador.getVidas();
 
-                System.out.println("Parabens! Voce acertou!");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Parabens! Você acertou!");
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de vidas: " + VidasJogador);
 
             } else {
@@ -512,15 +512,15 @@ public class PerguntasGeek {
                 VisualizarErros = pontuacaojogador.getErros();
                 VidasJogador = pontuacaojogador.getVidas();
 
-                System.out.println("Voce perdeu! Seu riquinho de merda");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
+                System.out.println("Você perdeu! Seu riquinho de merda");
+                System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de erros: " + VisualizarErros);
                 System.out.println("Total de vidas: " + VidasJogador);
             }
             if (vidasAtuais == 0 ){
                 Base.GamerOver();
             } else {
-                System.out.println("Parabens! Voce venceu! Sua pontuacao: ");
+                System.out.println("Parabens! Você venceu! Sua pontuação: ");
             }
         } catch (Exception e) {
             throw new RuntimeException(e);

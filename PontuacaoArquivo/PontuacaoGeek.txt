@@ -1,1 +1,5 @@
-
+Rayane;10
+Pam;1
+Vini;8
+Yuri;6
+Yuri;6
