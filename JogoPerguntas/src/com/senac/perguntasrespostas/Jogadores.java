@@ -47,10 +47,5 @@ public class Jogadores {
         return nickName;
     }
 
-    public int toInt(int acertos) {
-        return acertos;
-    }
 
-    public void setAcertos(String linhaValore) {
-    }
 }

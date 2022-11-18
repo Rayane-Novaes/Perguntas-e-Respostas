@@ -35,7 +35,7 @@ public class Base {
         System.out.println("[1] SIM e [2] N�O");
         int input = leiaInput(" > ", 2);
         if (input == 1 || input == 01){
-            Pontuacao.star();
+            Pontuacao.ler();
         } else {
             menu();
         }
@@ -68,7 +68,7 @@ public class Base {
                 break;
 
             case 4:
-                Pontuacao.star();
+                Pontuacao.ler();
                 break;
         }
     }
