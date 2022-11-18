@@ -334,7 +334,7 @@ public class PerguntasGeek {
             int input = Base.leiaInput(" > ", 4);
 
 
-            if (input == 1 || input == 01) {
+            if (input == 2 || input == 02) {
                 pontosAtuais = pontosAtuais + 1;
                 pontuacaojogador.setAcertos(pontosAtuais);
                 visualizarAcertos = pontuacaojogador.getAcertos();
@@ -513,14 +513,14 @@ public class PerguntasGeek {
                 VidasJogador = pontuacaojogador.getVidas();
 
                 System.out.println("Você perdeu! Seu riquinho de merda");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
+                System.out.println("Seus pontos sao: " + visualizarAcertos);
                 System.out.println("Total de erros: " + VisualizarErros);
                 System.out.println("Total de vidas: " + VidasJogador);
             }
             if (vidasAtuais == 0 ){
                 Base.GamerOver();
             } else {
-                System.out.println("Parabens! Você venceu! Sua pontuação: ");
+                System.out.println("Parabens! Voce venceu! Sua pontuacao: ");
             }
         } catch (Exception e) {
             throw new RuntimeException(e);

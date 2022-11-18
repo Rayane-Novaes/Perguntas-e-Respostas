@@ -63,7 +63,7 @@ public class PerguntasCall {
             System.out.println("Total de vidas: " + VidasJogador);
         }
 
-            Pergunta2Call();
+        Pergunta2Call();
 
     }
 
@@ -109,13 +109,13 @@ public class PerguntasCall {
                 System.out.println("Total de vidas: " + VidasJogador);
             }
 
-                Pergunta3Call();
+            Pergunta3Call();
 
         }
     }
 
 
-        public static void Pergunta3Call() throws IOException {
+    public static void Pergunta3Call() throws IOException {
 
 
         String arquivo = "PerguntasCuriosidades/Pergunta3Call.txt";
@@ -146,7 +146,7 @@ public class PerguntasCall {
 
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VisualizarErros = pontuacaojogador.getErros();
-                vidasAtuais = pontuacaojogador.getVidas();
+                VidasJogador = pontuacaojogador.getVidas();
 
                 System.out.println("Você errou");
                 System.out.println("Seus pontos são: " + visualizarAcertos);
@@ -154,7 +154,7 @@ public class PerguntasCall {
                 System.out.println("Total de vidas: " + VidasJogador);
             }
 
-                Pergunta4Call();
+            Pergunta4Call();
 
 
         }
@@ -194,7 +194,7 @@ public class PerguntasCall {
 
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VisualizarErros = pontuacaojogador.getErros();
-                vidasAtuais = pontuacaojogador.getVidas();
+                VidasJogador = pontuacaojogador.getVidas();
 
                 System.out.println("Você errou");
                 System.out.println("Seus pontos são: " + visualizarAcertos);
@@ -202,7 +202,7 @@ public class PerguntasCall {
                 System.out.println("Total de vidas: " + VidasJogador);
             }
 
-                Pergunta5Call();
+            Pergunta5Call();
 
 
         }
@@ -224,11 +224,11 @@ public class PerguntasCall {
 
             if (input == 3) {
                 pontosAtuais = pontosAtuais + 1;
+                pontuacaojogador.setAcertos(pontosAtuais);
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VidasJogador = pontuacaojogador.getVidas();
                 System.out.println("Parabens! Você acertou!\nAlternativa (3) Solstício de verão.! No solstício de verão o planeta atinge a sua máxima inclinação em relação ao Sol.\n" +
-                        "Pela incidência direta do Sol sobre o trópico, nesse dia, o hemisfério fica um maior tempo recebendo luz solar,\n" +
-                        "marcando o início do verão e o maior dia do ano.");
+                        " Pela incidência direta do Sol sobre o trópico, nesse dia, o hemisfério fica um maior tempo recebendo luz solar, marcando o início do verão e o maior dia do ano.");
                 System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de vidas: " + VidasJogador);
             } else {
@@ -242,7 +242,7 @@ public class PerguntasCall {
 
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VisualizarErros = pontuacaojogador.getErros();
-                vidasAtuais = pontuacaojogador.getVidas();
+                VidasJogador = pontuacaojogador.getVidas();
 
                 System.out.println("Você errou");
                 System.out.println("Seus pontos são: " + visualizarAcertos);
@@ -250,7 +250,7 @@ public class PerguntasCall {
                 System.out.println("Total de vidas: " + VidasJogador);
             }
 
-                Pergunta6Call();
+            Pergunta6Call();
 
         }
     }
@@ -285,14 +285,14 @@ public class PerguntasCall {
 
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VisualizarErros = pontuacaojogador.getErros();
-                vidasAtuais = pontuacaojogador.getVidas();
+                VidasJogador = pontuacaojogador.getVidas();
 
                 System.out.println("Você errou");
                 System.out.println("Seus pontos são: " + visualizarAcertos);
                 System.out.println("Total de erros: " + VisualizarErros);
                 System.out.println("Total de vidas: " + VidasJogador);
             }
-                Pergunta7Call();
+            Pergunta7Call();
         }
     }
 
@@ -329,7 +329,7 @@ public class PerguntasCall {
 
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VisualizarErros = pontuacaojogador.getErros();
-                vidasAtuais = pontuacaojogador.getVidas();
+                VidasJogador = pontuacaojogador.getVidas();
 
                 System.out.println("Você errou");
                 System.out.println("Seus pontos são: " + visualizarAcertos);
@@ -337,7 +337,7 @@ public class PerguntasCall {
                 System.out.println("Total de vidas: " + VidasJogador);
             }
 
-                Pergunta8Call();
+            Pergunta8Call();
         }
     }
 
@@ -373,7 +373,7 @@ public class PerguntasCall {
 
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VisualizarErros = pontuacaojogador.getErros();
-                vidasAtuais = pontuacaojogador.getVidas();
+                VidasJogador = pontuacaojogador.getVidas();
 
                 System.out.println("Você errou");
                 System.out.println("Seus pontos são: " + visualizarAcertos);
@@ -381,7 +381,7 @@ public class PerguntasCall {
                 System.out.println("Total de vidas: " + VidasJogador);
             }
 
-                Pergunta9Call();
+            Pergunta9Call();
         }
     }
 
@@ -419,7 +419,7 @@ public class PerguntasCall {
 
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VisualizarErros = pontuacaojogador.getErros();
-                vidasAtuais = pontuacaojogador.getVidas();
+                VidasJogador = pontuacaojogador.getVidas();
 
                 System.out.println("Você errou");
                 System.out.println("Seus pontos são: " + visualizarAcertos);
@@ -427,7 +427,7 @@ public class PerguntasCall {
                 System.out.println("Total de vidas: " + VidasJogador);
             }
 
-                Pergunta10Call();
+            Pergunta10Call();
         }
     }
 
@@ -464,7 +464,7 @@ public class PerguntasCall {
 
                 visualizarAcertos = pontuacaojogador.getAcertos();
                 VisualizarErros = pontuacaojogador.getErros();
-                vidasAtuais = pontuacaojogador.getVidas();
+                VidasJogador = pontuacaojogador.getVidas();
 
                 System.out.println("Você errou");
                 System.out.println("Seus pontos são: " + visualizarAcertos);
@@ -475,6 +475,7 @@ public class PerguntasCall {
                 Base.GamerOver();
             } else {
                 System.out.println("Parabens! Você venceu! Sua pontuação: ");
+                Pontuacao.star();
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -482,5 +483,4 @@ public class PerguntasCall {
     }
 
 }
-
 

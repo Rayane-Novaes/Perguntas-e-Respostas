@@ -31,8 +31,8 @@ public class Base {
     public static void GamerOver() throws Exception {
         // Adicionar o total de pontos que o usuario fez e o ranking que ele ficou
         String nome_usuario = Jogadores.getNickname();
-        System.out.println( "Infelizmente voc� perdeu! " + " " + nome_usuario + " " + "Deseja ver sua pontuacao?");
-        System.out.println("[1] SIM e [2] N�O");
+        System.out.println( "Infelizmente voce perdeu! " + " " + nome_usuario + " " + "Deseja ver sua pontuacao?");
+        System.out.println("[1] SIM e [2] NAO");
         int input = leiaInput(" > ", 2);
         if (input == 1 || input == 01){
             Pontuacao.ler();
@@ -115,7 +115,7 @@ public class Base {
         System.out.println("Bem vindo!" + nome_usuario);
         System.out.println("Escolha a categoria antes de iniciar:");
         System.out.println("[1] Geek");
-        System.out.println("[2] M�sicas");
+        System.out.println("[2] Musicas");
         System.out.println("[3] Conhecimentos gerais");
         System.out.print("O que deseja fazer?");
 
