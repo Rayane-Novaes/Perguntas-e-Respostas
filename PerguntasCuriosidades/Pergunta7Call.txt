@@ -1,7 +1,7 @@
  7. Quem foi o pai da Computação?
 
- 1) Elon Musk
- 2) Bill Gates
- 3) Albert Einstein
- 4) Alan Turing
+ [1] Elon Musk
+ [2] Bill Gates
+ [3] Albert Einstein
+ [4] Alan Turing
 

@@ -1,5 +1,4 @@
 package com.senac.perguntasrespostas;
-//Classe Ranking
 
 public class Ranking {
 	private String nome;
@@ -8,14 +7,14 @@ public class Ranking {
     public Ranking() {}
     
     public String getNome() {
-	return nome;
+        return nome;
     }
     public void setNome(String nome) {
-	this.nome = nome;
+        this.nome = nome;
     }
     
     public int getPontos() {
-	return pontos;
+        return pontos;
     }
     public void setPontos(int pontos) {
 	this.pontos = pontos;

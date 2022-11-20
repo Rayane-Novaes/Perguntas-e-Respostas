@@ -1,10 +1,11 @@
 package com.senac.perguntasrespostas;
 
-
 public class Jogadores {
     private static String nickname;
+    private static int Acertos;
     private int vidas = 3;
-    private int acertos;
+
+    private static int acertos;
     private int erros;
 
 
@@ -18,7 +19,7 @@ public class Jogadores {
     }
 
     public int getVidas() {
-        return this.vidas;
+        return vidas;
     }
 
     public void setVidas(int vidas) {
@@ -26,10 +27,9 @@ public class Jogadores {
     }
 
 
-    public int getAcertos() {
-        return this.acertos;
+    public static int getAcertos() {
+        return acertos;
     }
-
     public void setAcertos(int acertos) {
         this.acertos = acertos;
     }
@@ -43,9 +43,6 @@ public class Jogadores {
         this.erros = erros;
     }
 
-    public String toString(String nickName) {
-        return nickName;
-    }
 
 
 }

@@ -1,6 +1,6 @@
 2.  Qual o lugar mais profundo dos oceanos?
 
-1) Fossa de Bentley
-2) Fossa de Tonga
-3) Fossa de Java
-4) Fossa das Marianas
+[1] Fossa de Bentley
+[2] Fossa de Tonga
+[3] Fossa de Java
+[4] Fossa das Marianas

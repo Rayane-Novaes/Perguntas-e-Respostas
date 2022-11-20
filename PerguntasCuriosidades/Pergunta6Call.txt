@@ -1,6 +1,6 @@
  6. Quem foi a primeira mulher a viajar para o espaço?
 
- 1) Sally Ride
- 2) Valentina Tereshkova
- 3) Kathryn D. Sullivan
- 4) Svetlana Savitskaya
+[1] Sally Ride
+[2] Valentina Tereshkova
+[3] Kathryn D. Sullivan
+[4] Svetlana Savitskaya

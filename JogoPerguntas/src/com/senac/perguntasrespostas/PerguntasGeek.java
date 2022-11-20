@@ -10,12 +10,6 @@ import java.nio.file.Paths;
 public class PerguntasGeek {
 
     static Jogadores pontuacaojogador = new Jogadores();
-    public static int pontosAtuais = 0;
-    public static int pontosErros = 0;
-    public static int vidasAtuais = 3;
-    public static int visualizarAcertos = pontuacaojogador.getAcertos();
-    public static int VisualizarErros = pontuacaojogador.getAcertos();
-    public static int VidasJogador = pontuacaojogador.getVidas();
 
     // ---------------------------------------------------------------------------
     public static void Pergunta1() throws IOException {
@@ -32,33 +26,23 @@ public class PerguntasGeek {
 
 
             if (input == 1 || input == 01) {
-                pontosAtuais = pontosAtuais + 1;
-                pontuacaojogador.setAcertos(pontosAtuais);
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setAcertos(+1);
 
                 System.out.println("Parabens! Você acertou!");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
 
             } else {
-                pontosErros = pontosErros + 1;
-                vidasAtuais = vidasAtuais - 1;
 
                 // MODIFICADO OBJETO ------------------------------------------
-                pontuacaojogador.setAcertos(pontosAtuais);
-                pontuacaojogador.setVidas(vidasAtuais);
-                pontuacaojogador.setErros(pontosErros);
+                pontuacaojogador.setVidas(pontuacaojogador.getVidas()-1);
+                pontuacaojogador.setErros(+1);
 
-                // VISUALIZAR OBJETO ALTERADO ----------------------------------
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VisualizarErros = pontuacaojogador.getErros();
-                VidasJogador = pontuacaojogador.getVidas();
 
                 System.out.println("Você erro! O lado da força não está com você.");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de erros: " + VisualizarErros);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de erros: " + pontuacaojogador.getErros());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
             }
             // Chamado a pergunta 2 para mostrar par usuário
             Pergunta2();
@@ -78,36 +62,25 @@ public class PerguntasGeek {
 
 
             if (input == 3 || input == 03) {
-                pontosAtuais = pontosAtuais + 1;
-                pontuacaojogador.setAcertos(pontosAtuais);
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VidasJogador = pontuacaojogador.getVidas();
+
+                pontuacaojogador.setAcertos(pontuacaojogador.getAcertos()+1);
 
                 System.out.println("Parabens! Você acertou!");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
 
             } else {
-                pontosErros = pontosErros + 1;
-                vidasAtuais = vidasAtuais - 1;
-
                 // MODIFICADO OBJETO ------------------------------------------
-                pontuacaojogador.setAcertos(pontosAtuais);
-                pontuacaojogador.setVidas(vidasAtuais);
-                pontuacaojogador.setErros(pontosErros);
-
-                // VISUALIZAR OBJETO ALTERADO ----------------------------------
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VisualizarErros = pontuacaojogador.getErros();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setVidas(pontuacaojogador.getVidas()-1);
+                pontuacaojogador.setErros(pontuacaojogador.getErros()+1);
 
                 System.out.println("Você erro! Parece que nem com a música favorita você te salvaria do Vecna.");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de erros: " + VisualizarErros);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de erros: " + pontuacaojogador.getErros());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
             }
 
-            if (vidasAtuais == 0 ){
+            if (pontuacaojogador.getVidas() == 0 ){
                 Base.GamerOver();
             } else {
                 // Chamado a pergunta 3 para mostrar par usuário
@@ -133,35 +106,23 @@ public class PerguntasGeek {
 
 
             if (input == 2 || input == 02) { // Verifica se a Alternativa está correta
-                pontosAtuais = pontosAtuais + 1;
-                pontuacaojogador.setAcertos(pontosAtuais);
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setAcertos(pontuacaojogador.getAcertos()+1);
 
                 System.out.println("Parabens! Você acertou!");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
 
             } else {
-                pontosErros = pontosErros + 1;
-                vidasAtuais = vidasAtuais - 1;
-
                 // MODIFICADO OBJETO ------------------------------------------
-                pontuacaojogador.setAcertos(pontosAtuais);
-                pontuacaojogador.setVidas(vidasAtuais);
-                pontuacaojogador.setErros(pontosErros);
-
-                // VISUALIZAR OBJETO ALTERADO ----------------------------------
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VisualizarErros = pontuacaojogador.getErros();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setVidas(pontuacaojogador.getVidas()-1);
+                pontuacaojogador.setErros(pontuacaojogador.getErros()+1);
 
                 System.out.println("Você erro! Você não tem o jeito ninja.");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de erros: " + VisualizarErros);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de erros: " + pontuacaojogador.getErros());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
             }
-            if (vidasAtuais == 0 ){
+            if (pontuacaojogador.getVidas() == 0 ){
                 Base.GamerOver();
             } else {
                 Pergunta4();
@@ -182,35 +143,24 @@ public class PerguntasGeek {
 
 
             if (input == 1 || input == 01) {
-                pontosAtuais = pontosAtuais + 1;
-                pontuacaojogador.setAcertos(pontosAtuais);
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setAcertos(pontuacaojogador.getAcertos()+1);
 
                 System.out.println("Parabens! Você acertou!");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
 
             } else {
-                pontosErros = pontosErros + 1;
-                vidasAtuais = vidasAtuais - 1;
-
                 // MODIFICADO OBJETO ------------------------------------------
-                pontuacaojogador.setAcertos(pontosAtuais);
-                pontuacaojogador.setVidas(vidasAtuais);
-                pontuacaojogador.setErros(pontosErros);
+                pontuacaojogador.setVidas(pontuacaojogador.getVidas()-1);
+                pontuacaojogador.setErros(pontuacaojogador.getErros()+1);
 
-                // VISUALIZAR OBJETO ALTERADO ----------------------------------
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VisualizarErros = pontuacaojogador.getErros();
-                VidasJogador = pontuacaojogador.getVidas();
 
                 System.out.println("Você erro! Você não tem o jeito ninja.");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de erros: " + VisualizarErros);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de erros: " + pontuacaojogador.getErros());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
             }
-            if (vidasAtuais == 0 ){
+            if (pontuacaojogador.getVidas() == 0 ){
                 Base.GamerOver();
             } else {
                 Pergunta5();
@@ -233,35 +183,23 @@ public class PerguntasGeek {
 
 
             if (input == 4 || input == 04) {
-                pontosAtuais = pontosAtuais + 1;
-                pontuacaojogador.setAcertos(pontosAtuais);
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setAcertos(pontuacaojogador.getAcertos()+1);
 
                 System.out.println("Parabens! Você acertou!");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
 
             } else {
-                pontosErros = pontosErros + 1;
-                vidasAtuais = vidasAtuais - 1;
-
                 // MODIFICADO OBJETO ------------------------------------------
-                pontuacaojogador.setAcertos(pontosAtuais);
-                pontuacaojogador.setVidas(vidasAtuais);
-                pontuacaojogador.setErros(pontosErros);
-
-                // VISUALIZAR OBJETO ALTERADO ----------------------------------
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VisualizarErros = pontuacaojogador.getErros();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setVidas(pontuacaojogador.getVidas()-1);
+                pontuacaojogador.setErros(pontuacaojogador.getErros()+1);
 
                 System.out.println("Você perdeu! Mas quem dizer que isso é problema meu...");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de erros: " + VisualizarErros);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de erros: " + pontuacaojogador.getErros());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
             }
-            if (vidasAtuais == 0 ){
+            if (pontuacaojogador.getVidas() == 0 ){
                 Base.GamerOver();
             } else {
                 Pergunta6();
@@ -284,35 +222,23 @@ public class PerguntasGeek {
 
 
             if (input == 2 || input == 02) {
-                pontosAtuais = pontosAtuais + 1;
-                pontuacaojogador.setAcertos(pontosAtuais);
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setAcertos(pontuacaojogador.getAcertos()+1);
 
                 System.out.println("Parabens! Você acertou!");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
 
             } else {
-                pontosErros = pontosErros + 1;
-                vidasAtuais = vidasAtuais - 1;
-
                 // MODIFICADO OBJETO ------------------------------------------
-                pontuacaojogador.setAcertos(pontosAtuais);
-                pontuacaojogador.setVidas(vidasAtuais);
-                pontuacaojogador.setErros(pontosErros);
-
-                // VISUALIZAR OBJETO ALTERADO ----------------------------------
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VisualizarErros = pontuacaojogador.getErros();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setVidas(pontuacaojogador.getVidas()-1);
+                pontuacaojogador.setErros(pontuacaojogador.getErros()+1);
 
                 System.out.println("Você perdeu! Seu riquinho de merda");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de erros: " + VisualizarErros);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de erros: " + pontuacaojogador.getErros());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
             }
-            if (vidasAtuais == 0 ){
+            if (pontuacaojogador.getVidas() == 0 ){
                 Base.GamerOver();
             } else {
                 Pergunta7();
@@ -335,35 +261,23 @@ public class PerguntasGeek {
 
 
             if (input == 2 || input == 02) {
-                pontosAtuais = pontosAtuais + 1;
-                pontuacaojogador.setAcertos(pontosAtuais);
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setAcertos(pontuacaojogador.getAcertos()+1);
 
                 System.out.println("Parabens! Você acertou!");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
 
             } else {
-                pontosErros = pontosErros + 1;
-                vidasAtuais = vidasAtuais - 1;
-
                 // MODIFICADO OBJETO ------------------------------------------
-                pontuacaojogador.setAcertos(pontosAtuais);
-                pontuacaojogador.setVidas(vidasAtuais);
-                pontuacaojogador.setErros(pontosErros);
-
-                // VISUALIZAR OBJETO ALTERADO ----------------------------------
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VisualizarErros = pontuacaojogador.getErros();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setVidas(pontuacaojogador.getVidas()-1);
+                pontuacaojogador.setErros(pontuacaojogador.getErros()+1);
 
                 System.out.println("Você perdeu! Is mi Mário!");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de erros: " + VisualizarErros);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de erros: " + pontuacaojogador.getErros());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
             }
-            if (vidasAtuais == 0 ){
+            if (pontuacaojogador.getVidas() == 0 ){
                 Base.GamerOver();
             } else {
                 Pergunta8();
@@ -386,35 +300,23 @@ public class PerguntasGeek {
 
 
             if (input == 3 || input == 03) {
-                pontosAtuais = pontosAtuais + 1;
-                pontuacaojogador.setAcertos(pontosAtuais);
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setAcertos(pontuacaojogador.getAcertos()+1);
 
                 System.out.println("Parabens! Você acertou!");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
 
             } else {
-                pontosErros = pontosErros + 1;
-                vidasAtuais = vidasAtuais - 1;
-
                 // MODIFICADO OBJETO ------------------------------------------
-                pontuacaojogador.setAcertos(pontosAtuais);
-                pontuacaojogador.setVidas(vidasAtuais);
-                pontuacaojogador.setErros(pontosErros);
-
-                // VISUALIZAR OBJETO ALTERADO ----------------------------------
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VisualizarErros = pontuacaojogador.getErros();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setVidas(pontuacaojogador.getVidas()-1);
+                pontuacaojogador.setErros(pontuacaojogador.getErros()+1);
 
                 System.out.println("Você perdeu! Seu riquinho de merda");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de erros: " + VisualizarErros);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de erros: " + pontuacaojogador.getErros());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
             }
-            if (vidasAtuais == 0 ){
+            if (pontuacaojogador.getVidas() == 0 ){
                 Base.GamerOver();
             } else {
                 Pergunta9();
@@ -437,35 +339,23 @@ public class PerguntasGeek {
 
 
             if (input == 4 || input == 04) {
-                pontosAtuais = pontosAtuais + 1;
-                pontuacaojogador.setAcertos(pontosAtuais);
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setAcertos(pontuacaojogador.getAcertos()+1);
 
                 System.out.println("Parabens! Você acertou!");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
 
             } else {
-                pontosErros = pontosErros + 1;
-                vidasAtuais = vidasAtuais - 1;
-
                 // MODIFICADO OBJETO ------------------------------------------
-                pontuacaojogador.setAcertos(pontosAtuais);
-                pontuacaojogador.setVidas(vidasAtuais);
-                pontuacaojogador.setErros(pontosErros);
-
-                // VISUALIZAR OBJETO ALTERADO ----------------------------------
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VisualizarErros = pontuacaojogador.getErros();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setVidas(pontuacaojogador.getVidas()-1);
+                pontuacaojogador.setErros(pontuacaojogador.getErros()+1);
 
                 System.out.println("Você perdeu! Seu riquinho de merda");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de erros: " + VisualizarErros);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de erros: " + pontuacaojogador.getErros());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
             }
-            if (vidasAtuais == 0 ){
+            if (pontuacaojogador.getVidas() == 0 ){
                 Base.GamerOver();
             } else {
                 // Chamado a pergunta 3 para mostrar par usuário
@@ -489,38 +379,34 @@ public class PerguntasGeek {
 
 
             if (input == 3 || input == 03) {
-                pontosAtuais = pontosAtuais + 1;
-                pontuacaojogador.setAcertos(pontosAtuais);
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setAcertos(pontuacaojogador.getAcertos()+1);
 
                 System.out.println("Parabens! Você acertou!");
-                System.out.println("Seus pontos são: " + visualizarAcertos);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
 
             } else {
-                pontosErros = pontosErros + 1;
-                vidasAtuais = vidasAtuais - 1;
-
                 // MODIFICADO OBJETO ------------------------------------------
-                pontuacaojogador.setAcertos(pontosAtuais);
-                pontuacaojogador.setVidas(vidasAtuais);
-                pontuacaojogador.setErros(pontosErros);
-
-                // VISUALIZAR OBJETO ALTERADO ----------------------------------
-                visualizarAcertos = pontuacaojogador.getAcertos();
-                VisualizarErros = pontuacaojogador.getErros();
-                VidasJogador = pontuacaojogador.getVidas();
+                pontuacaojogador.setVidas(pontuacaojogador.getVidas()-1);
+                pontuacaojogador.setErros(pontuacaojogador.getErros()+1);
 
                 System.out.println("Você perdeu! Seu riquinho de merda");
-                System.out.println("Seus pontos sao: " + visualizarAcertos);
-                System.out.println("Total de erros: " + VisualizarErros);
-                System.out.println("Total de vidas: " + VidasJogador);
+                System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
+                System.out.println("Total de erros: " + pontuacaojogador.getErros());
+                System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
             }
-            if (vidasAtuais == 0 ){
+            if (pontuacaojogador.getVidas() == 0 ){
                 Base.GamerOver();
             } else {
-                System.out.println("Parabens! Voce venceu! Sua pontuacao: ");
+                System.out.println( "Voce ganhou! " + " " + Jogadores.getNickname() + " " + "Deseja ver sua pontuacao?");
+                System.out.println("[1] SIM e [2] NAO");
+                int entrada = Base.leiaInput(" > ", 2);
+
+                if (entrada == 1 || entrada == 01){
+                    Pontuacao.ler();
+                } else {
+                    Base.menu();
+                }
             }
         } catch (Exception e) {
             throw new RuntimeException(e);

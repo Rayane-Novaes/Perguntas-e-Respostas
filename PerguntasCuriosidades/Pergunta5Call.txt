@@ -1,9 +1,9 @@
 5. Qual o nome do evento astronómico responsável pelo dia mais longo do ano?
 
-1) Equinócio de outono
-2) Solstício de inverno
-3) Solstício de verão
-4) Equinócio de primavera
+[1] Equinócio de outono
+[2] Solstício de inverno
+[3] Solstício de verão
+[4] Equinócio de primavera
 
 
 

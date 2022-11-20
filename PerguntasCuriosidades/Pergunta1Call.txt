@@ -1,8 +1,8 @@
 1. De quem é a famosa frase “Penso, logo existo”?
 
-1) Platão
-2) Galileu Galilei
-3) Descartes
-4) Sócrates
+[1] Platão
+[2] Galileu Galilei
+[3] Descartes
+[4] Sócrates
 
 

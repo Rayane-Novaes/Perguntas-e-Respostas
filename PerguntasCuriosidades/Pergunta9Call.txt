@@ -1,6 +1,6 @@
  9. O que representam os cinco anéis olímpicos?
 
- 1) As partes do mundo unidas pelo Olimpismo.
- 2) As argolas da ginástica artística.
- 3) Cinco tipos de esporte: de rede, de campo, de combate, de precisão, de invasão.
- 4) Cinco deuses do Olimpo: Zeus, Atena, Apolo, Dionísio e Hermes.
+ [1] As partes do mundo unidas pelo Olimpismo.
+ [2] As argolas da ginástica artística.
+ [3] Cinco tipos de esporte: de rede, de campo, de combate, de precisão, de invasão.
+ [4] Cinco deuses do Olimpo: Zeus, Atena, Apolo, Dionísio e Hermes.

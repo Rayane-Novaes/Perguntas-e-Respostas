@@ -1,6 +1,6 @@
 O que é o Acordo de Paris?
 
-1) Acordo internacional que trata do aquecimento global
-2) Acordo internacional que trata da restrição de imigrantes em Paris
-3) Acordo internacional que trata da proteção da França dos atentados terroristas
-4) Acordo internacional que trata do Desenvolvimento Sustentável
+[1] Acordo internacional que trata do aquecimento global
+[2] Acordo internacional que trata da restrição de imigrantes em Paris
+[3] Acordo internacional que trata da proteção da França dos atentados terroristas
+[4] Acordo internacional que trata do Desenvolvimento Sustentável

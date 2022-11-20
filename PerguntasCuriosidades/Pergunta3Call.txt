@@ -1,6 +1,6 @@
 3. Qual a maior operação militar da história, que contou com o deslocamento de 3,8 milhões de soldados?
 
-1) Operação Tempestade no Deserto (Exército dos Estados Unidos na Guerra do Golfo)
-2) Operação Overlord (Aliados na Segunda Guerra Mundial)
-3) Operação Barbarossa (Países do Eixo na Segunda Guerra Mundial)
-4) Operação Michael (Império Alemão na Primeira Guerra Mundial)
+[1] Operação Tempestade no Deserto (Exército dos Estados Unidos na Guerra do Golfo)
+[2] Operação Overlord (Aliados na Segunda Guerra Mundial)
+[3] Operação Barbarossa (Países do Eixo na Segunda Guerra Mundial)
+[4] Operação Michael (Império Alemão na Primeira Guerra Mundial)

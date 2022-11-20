@@ -30,8 +30,8 @@ public class Base {
 
     public static void GamerOver() throws Exception {
         // Adicionar o total de pontos que o usuario fez e o ranking que ele ficou
-        String nome_usuario = Jogadores.getNickname();
-        System.out.println( "Infelizmente voce perdeu! " + " " + nome_usuario + " " + "Deseja ver sua pontuacao?");
+
+        System.out.println( "Infelizmente voce perdeu! " + " " +  Jogadores.getNickname() + " " + "Deseja ver sua pontuacao?");
         System.out.println("[1] SIM e [2] NAO");
         int input = leiaInput(" > ", 2);
         if (input == 1 || input == 01){
@@ -82,9 +82,9 @@ public class Base {
         System.out.println("Informe seu nickname: ");
         String NickName = entrada.next();
         Jogadores novoJogador = new Jogadores();
-        novoJogador.setNickname(novoJogador.toString(NickName)); // ATRIBUIDO O NOME DO JOGADOR
+        novoJogador.setNickname(NickName); // ATRIBUIDO O NOME DO JOGADOR
         categoria();
-        Pontuacao.star();
+        Pontuacao.escrever();
     }
 
     
@@ -112,7 +112,7 @@ public class Base {
 
     public static void categoria() throws IOException {
         String nome_usuario = Jogadores.getNickname();
-        System.out.println("Bem vindo!" + nome_usuario);
+        System.out.println("Bem vindo!" + Jogadores.getNickname());
         System.out.println("Escolha a categoria antes de iniciar:");
         System.out.println("[1] Geek");
         System.out.println("[2] Musicas");

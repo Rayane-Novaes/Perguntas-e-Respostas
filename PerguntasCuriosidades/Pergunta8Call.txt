@@ -1,6 +1,6 @@
 8. Qual a montanha mais alta do mundo?
 
-1) Mauna Kea
-2) Dhaulagiri
-3) Pico da Neblina
-4) Monte Everest
+[1] Mauna Kea
+[2] Dhaulagiri
+[3] Pico da Neblina
+[4] Monte Everest

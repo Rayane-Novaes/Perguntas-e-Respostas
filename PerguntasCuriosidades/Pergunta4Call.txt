@@ -1,7 +1,7 @@
  4. Quem foi a mulher negra que se recusou a ceder o lugar num ônibus para um homem branco e marcou a luta pelos direitos civis dos negros dos Estados Unidos em 1955?
 
- 1) Rosa Parks
- 2) Angela Davis
- 3) Elaine Brown
- 4) Jo Ann Robinson
- 5) Kimberlé Crenshaw
+ [1] Rosa Parks
+ [2] Angela Davis
+ [3] Elaine Brown
+ [4] Jo Ann Robinson
+ [5] Kimberlé Crenshaw
