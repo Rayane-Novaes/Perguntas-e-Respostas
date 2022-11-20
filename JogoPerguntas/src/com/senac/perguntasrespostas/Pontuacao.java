@@ -79,6 +79,7 @@ public class Pontuacao {
         for (int i = 0; i < jogadores.size();i++){
 
             for (int j = 0; j < (jogadores.size() - 1);j++){
+
                 if(jogadores.get(j).getPontos() < jogadores.get(j + 1).getPontos()){
 
                     nome_aux =  jogadores.get(j).getNome();
@@ -98,8 +99,9 @@ public class Pontuacao {
             }
         }
 
-        for (int i = 0; i < jogadores.size();i++){
-            System.out.println("Posição: "+ (i+1)+"°"+ "Jogador: "+jogadores.get(i).getNome()+" || Pontuação: "+ jogadores.get(i).getPontos());
+        int aux = 0;
+        for (int i = 0; i < jogadores.size(); i++){
+            System.out.println("Posição: "+ (i+1) + " " + "Jogador: " + jogadores.get(i).getNome() + " || Pontuacao: "+ jogadores.get(i).getPontos());
         }
     }
     

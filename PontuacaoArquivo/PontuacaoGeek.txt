@@ -3,3 +3,6 @@ Pamera;4
 TESTE;3
 ViniciusA;6
 Julie;5
+Maria;8
+Natalie;7
+lululu;6
