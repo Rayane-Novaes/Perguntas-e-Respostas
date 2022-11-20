@@ -308,7 +308,7 @@ public class PerguntasCall {
                 pontuacaojogador.setVidas(pontuacaojogador.getVidas()-1);
                 pontuacaojogador.setErros(pontuacaojogador.getErros()+1);
 
-                System.out.println("Você perdeu! Seu riquinho de merda");
+                System.out.println("Você perdeu! Talvez na próxima.");
                 System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
                 System.out.println("Total de erros: " + pontuacaojogador.getErros());
                 System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
@@ -347,7 +347,7 @@ public class PerguntasCall {
                 pontuacaojogador.setVidas(pontuacaojogador.getVidas()-1);
                 pontuacaojogador.setErros(pontuacaojogador.getErros()+1);
 
-                System.out.println("Você perdeu! Seu riquinho de merda");
+                System.out.println("Você perdeu! Talvez na próxima");
                 System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
                 System.out.println("Total de erros: " + pontuacaojogador.getErros());
                 System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
@@ -387,7 +387,7 @@ public class PerguntasCall {
                 pontuacaojogador.setVidas(pontuacaojogador.getVidas()-1);
                 pontuacaojogador.setErros(pontuacaojogador.getErros()+1);
 
-                System.out.println("Você perdeu! Seu riquinho de merda");
+                System.out.println("Você perdeu! Talvez na próxima");
                 System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
                 System.out.println("Total de erros: " + pontuacaojogador.getErros());
                 System.out.println("Total de vidas: " + pontuacaojogador.getVidas());

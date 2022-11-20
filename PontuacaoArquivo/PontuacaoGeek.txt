@@ -2,14 +2,4 @@ Rayane;10
 Pamera;4
 TESTE;3
 ViniciusA;6
-
-ViniciusS;4
-Lucaa;8
-Lucaa;8
-Lucas;2
-Professor;2
-1;2
-1;2
-yuri;6
-Hilda;9
-ioooo;2
+Julie;5

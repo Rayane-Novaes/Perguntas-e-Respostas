@@ -12,9 +12,6 @@ import java.util.List;
 
 public class Pontuacao {
 
-    public static void teste() throws IOException {
-        ler();
-    }
     public static void escrever() throws IOException {
 
         String texto_nome = Jogadores.getNickname() + ";" + Jogadores.getAcertos();
@@ -24,11 +21,11 @@ public class Pontuacao {
         try (OutputStream outputStream = Files.newOutputStream(arquivo, StandardOpenOption.APPEND)) {
             for (int i = 0; i <= 9; i++)
                 if (i < 1) {
-                    outputStream.write(String.valueOf(texto_nome + "\r\n").getBytes());
+                    outputStream.write(String.valueOf(texto_nome + "\n").getBytes());
                 }
         }
 
-        teste();
+        ler();
 
     }
 
@@ -71,7 +68,7 @@ public class Pontuacao {
         BubleSort(jogadores);
     }
 
-    public static void BubleSort(List <Ranking> jogadores) throws IOException {
+    public static void BubleSort(List <Ranking> jogadores) {
 
 
         String nome_aux;
