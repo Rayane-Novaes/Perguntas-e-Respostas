@@ -25,12 +25,10 @@ public class Pontuacao {
                 }
         }
 
-        ler();
-
     }
 
 
-    public static void ler() throws IOException{
+    public static void ler() throws Exception {
         //Caminho do Arquivo Salvo:
         String arquivo = "PontuacaoArquivo/PontuacaoGeek.txt";
         Path caminho = Paths.get(arquivo);
@@ -68,7 +66,7 @@ public class Pontuacao {
         BubleSort(jogadores);
     }
 
-    public static void BubleSort(List <Ranking> jogadores) {
+    public static void BubleSort(List <Ranking> jogadores) throws Exception {
 
 
         String nome_aux;
@@ -94,6 +92,7 @@ public class Pontuacao {
 
                 }
             }
+
             if(controle == true){
                 break;
             }
@@ -103,11 +102,20 @@ public class Pontuacao {
         for (int i = 0; i < jogadores.size(); i++){
             System.out.println("Posição: "+ (i+1) + " " + "Jogador: " + jogadores.get(i).getNome() + " || Pontuacao: "+ jogadores.get(i).getPontos());
         }
-    }
-    
-    
 
-}
+
+
+        System.out.println("Deseja volta para o menu inicial?");
+        System.out.println("[1]Sim [2]Não");
+        int input = Base.leiaInput(" > ", 2);
+        if (input == 1){
+            Base.menu();
+        }
+
+
+        }
+    }
+
     
 
 

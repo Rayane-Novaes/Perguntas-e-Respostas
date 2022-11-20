@@ -13,6 +13,10 @@ public class PerguntasMusica {
 
 
 public static void Pergunta1Musica() throws IOException{
+    // Tratamento para caso o usuário troque de categoria futuramente
+    pontuacaojogador.setAcertos(0);
+    pontuacaojogador.setErros(0);
+    pontuacaojogador.setVidas(3);
     
     String arquivo = "PerguntasMusica/Pergunta1Musica.txt"; 
     Path caminho = Paths.get(arquivo); 

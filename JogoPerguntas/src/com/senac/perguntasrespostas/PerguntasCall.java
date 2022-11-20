@@ -14,6 +14,10 @@ public class PerguntasCall {
 
     // ---------------------------------------------------------------------------
     public static void Pergunta1() throws IOException {
+        // Tratamento para caso o usuário troque de categoria futuramente
+        pontuacaojogador.setAcertos(0);
+        pontuacaojogador.setErros(0);
+        pontuacaojogador.setVidas(3);
 
         // PERGUNTA 1 ----------------------------------------------------------------------------
         String arquivo = "PerguntasCuriosidades/Pergunta1Call.txt";

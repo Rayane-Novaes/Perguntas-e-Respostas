@@ -1,8 +1,10 @@
 Rayane;10
-Pamera;4
-TESTE;3
-ViniciusA;6
-Julie;5
-Maria;8
-Natalie;7
-lululu;6
+VINI;2
+tati;2
+Huri;4
+Renta;7
+Ray;2
+TESTEEEE;5
+Lucas;7
+GABIELA;7
+HURI;2

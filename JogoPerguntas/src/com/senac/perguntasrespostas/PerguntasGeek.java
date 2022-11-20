@@ -11,8 +11,14 @@ public class PerguntasGeek {
 
     static Jogadores pontuacaojogador = new Jogadores();
 
+
+
     // ---------------------------------------------------------------------------
     public static void Pergunta1() throws IOException {
+        // Tratamento para caso o usuário troque de categoria futuramente
+        pontuacaojogador.setAcertos(0);
+        pontuacaojogador.setErros(0);
+        pontuacaojogador.setVidas(3);
 
         // PERGUNTA 1 ----------------------------------------------------------------------------
         String arquivo = "PerguntasGeek/Pergunta1Geek.txt";
@@ -398,13 +404,11 @@ public class PerguntasGeek {
             if (pontuacaojogador.getVidas() == 0 ){
                 Base.GamerOver();
             } else {
-                System.out.println( "Voce ganhou! " + " " + Jogadores.getNickname() + " " + "Deseja ver sua pontuacao?");
+                System.out.println( "Voce ganhou! " + " " + Jogadores.getNickname() + " " + "Deseja abrir o menu?");
                 System.out.println("[1] SIM e [2] NAO");
                 int entrada = Base.leiaInput(" > ", 2);
 
                 if (entrada == 1 || entrada == 01){
-                    Pontuacao.ler();
-                } else {
                     Base.menu();
                 }
             }
