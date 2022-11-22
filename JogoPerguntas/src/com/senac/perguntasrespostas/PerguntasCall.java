@@ -385,6 +385,7 @@ public class PerguntasCall {
                 System.out.println("Parabens! Você acertou!");
                 System.out.println("Seus pontos são: " + pontuacaojogador.getAcertos());
                 System.out.println("Total de vidas: " + pontuacaojogador.getVidas());
+                Pontuacao.escrever();
 
             } else {
                 // MODIFICADO OBJETO ------------------------------------------

@@ -37,7 +37,7 @@ public class Base {
         int input = leiaInput(" > ", 2);
         if (input == 01){
             Base.menu();
-        }
+        }        
     }
 
     public static void menu() throws Exception {
