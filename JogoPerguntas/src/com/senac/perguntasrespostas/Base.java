@@ -32,13 +32,11 @@ public class Base {
         // Adicionar o total de pontos que o usuario fez e o ranking que ele ficou
         Pontuacao.escrever();
 
-        System.out.println( "Infelizmente voce perdeu! " + " " +  Jogadores.getNickname() + " " + "Deseja abrir o menu?");
-        System.out.println("[1] SIM e [2] NAO");
-        int input = leiaInput(" > ", 2);
-        if (input == 01){
+        System.out.println( "Infelizmente voce perdeu! " + " " +  Jogadores.getNickname() + " " + "Vamos voltar ao menu inicial!");
+     
             Base.menu();
         }        
-    }
+    
 
     public static void menu() throws Exception {
                 // METODO MENU: Utilizado para chamar os outros metodos que dão ação para o jogo.
