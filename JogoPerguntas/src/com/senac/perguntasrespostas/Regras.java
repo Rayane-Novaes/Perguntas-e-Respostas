@@ -1,16 +1,13 @@
 package com.senac.perguntasrespostas;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
-
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class Regras {
-	public static void instrucoes() throws IOException {
+	public static void instrucoes() throws Exception {
 		String arquivo = "Regras/Instrucoes.txt";
 		Path caminho = Paths.get(arquivo);
 
@@ -18,5 +15,12 @@ public class Regras {
 			for (String line : bufferedReader.lines().toList())
 				System.out.println(line);
 		}
+		System.out.println("Deseja voltar para o menu inicial?");
+        System.out.println("[1]Sim [2]Não");
+        int input = Base.leiaInput(" > ", 2);
+        if (input == 1){
+            Base.menu();
+        }
+		
 	}
 }

@@ -5,6 +5,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
+
 public class Creditos {
 	
 	public static Path criarArquivo() throws Exception {
@@ -27,12 +28,19 @@ public class Creditos {
 					"VINICIUS SANTANA \r\n" +
 					"VINICIUS SOUZA ARAUJO \r\n",
 			 			StandardOpenOption.APPEND);
+	}
 	
-}	
 	public static String ler(Path novoArquivo) throws Exception {
+		
 		String conteudo = Files.readString(novoArquivo);
 				return conteudo;
-	}
+								
+}
+	
+				public static void voltar() throws Exception {
+				}
+
+		       
 
 public static void creditos(Path novoArquivo) throws Exception {
 	novoArquivo = Paths.get("creditos do jogo/creditos.txt");
@@ -46,6 +54,14 @@ public static void creditos(Path novoArquivo) throws Exception {
       String conteudo = ler(novoArquivo);
 	  System.out.println(conteudo);
 		}
+	
+	System.out.println("Deseja voltar para o menu inicial?");
+    System.out.println("[1]Sim [2]Não");
+    int input = Base.leiaInput(" > ", 2);
+    if (input == 1){
+        Base.menu();
+    }
+
 }
 
 }

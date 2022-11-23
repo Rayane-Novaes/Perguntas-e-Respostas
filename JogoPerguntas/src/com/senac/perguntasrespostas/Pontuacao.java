@@ -1,6 +1,7 @@
 package com.senac.perguntasrespostas;
 
 import java.io.*;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -105,7 +106,7 @@ public class Pontuacao {
 
 
 
-        System.out.println("Deseja volta para o menu inicial?");
+        System.out.println("Deseja voltar para o menu inicial?");
         System.out.println("[1]Sim [2]Não");
         int input = Base.leiaInput(" > ", 2);
         if (input == 1){

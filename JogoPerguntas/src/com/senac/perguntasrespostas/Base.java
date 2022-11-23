@@ -40,6 +40,7 @@ public class Base {
 
     public static void menu() throws Exception {
                 // METODO MENU: Utilizado para chamar os outros metodos que dão ação para o jogo.
+    	
                 System.out.println("------------- Menu Principal -----------------");
                 System.out.println("[1] Jogar");
                 System.out.println("[2] Instrucoes");
