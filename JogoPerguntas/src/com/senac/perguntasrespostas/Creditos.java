@@ -33,14 +33,8 @@ public class Creditos {
 	public static String ler(Path novoArquivo) throws Exception {
 		
 		String conteudo = Files.readString(novoArquivo);
-				return conteudo;
-								
-}
-	
-				public static void voltar() throws Exception {
-				}
-
-		       
+				return conteudo;								
+}		       
 
 public static void creditos(Path novoArquivo) throws Exception {
 	novoArquivo = Paths.get("creditos do jogo/creditos.txt");
